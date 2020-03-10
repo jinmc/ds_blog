@@ -23,22 +23,22 @@ summaryLength = 10 # Configure how long the post summary should be on the homepa
 
 	# Add links to your accounts. Remove the ones you don't want to include.
 	# Main
-	email = "jinmochong@gmail.com"
-        facebook = ""
+	email = "mailto:jinmochong@gmail.com"
+        facebook = "https://www.facebook.com/profile.php?id=100006651933516"
 #        twitter = "#"
-	instagram = "#"
+#	instagram = "#"
 #	tumblr = "#"
 #	reddit = "#"
 #	pinterest = "#"
 #	youtube = "#"
 #	weibo = "#"
 #	vk = "#"
-	linkedin = "jim-chong-8b8059b2"
+	linkedin = "https://www.linkedin.com/in/jim-chong-8b8059b2/"
 
 	# Writing
 #    	medium = "#"
 #	blogger = "#"
-	wordpress = "jinmochong.com"
+	wordpress = "http://jinmochong.com"
 
 	# Creative & Visual
 #    dribbble = "#"
@@ -47,7 +47,7 @@ summaryLength = 10 # Configure how long the post summary should be on the homepa
 #	flickr = "#"
 
 	# Programming
-#	github = "#"
+	github = "jinmc"
 #	stackoverflow = "#"
 #	gitlab = "#"
 #	codepen = "#"
