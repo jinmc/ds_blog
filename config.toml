@@ -47,7 +47,7 @@ summaryLength = 10 # Configure how long the post summary should be on the homepa
 #	flickr = "#"
 
 	# Programming
-	github = "jinmc"
+	github = "https://github.com/jinmc"
 #	stackoverflow = "#"
 #	gitlab = "#"
 #	codepen = "#"
