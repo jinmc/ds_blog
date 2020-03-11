@@ -1,7 +1,7 @@
 ---
 title: "Motivation"
 date: 2020-03-09T23:31:23-04:00
-draft: true
+draft: false
 tags: ["RBasics"]
 ---
 <p>
