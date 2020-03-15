@@ -2,7 +2,6 @@
 
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.65.3" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,8 +28,6 @@
     
     
  
-    
-    <link rel="alternate" type="application/rss+xml" href="https://jinmc.github.io/ds_blog/index.xml" title="DS Blog" />
     
     
 
@@ -149,83 +146,102 @@
 </nav>
         <div id="content" class="content-container">
         
-<div class = "article-content">
-        
-        <div class="description">
-            <p>This is a blog from Jim to note and record studying about Data Science</p>
-        </div>
-        
-        
-        
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/rbasics/r_intro/">
-                    R_Intro
-                </a>
-            </h2>
-            <div><p>About R and RStudio</p></div>
-            <div class="post-footer">
-            <time>March 15, 2020</time>
+<h1 class="post-title">R_Intro</h1>
+    <time>March 15, 2020</time>
+    <div>
+        <p>
+        <h2>
+What is R and R Studio?
+</h2>
+<p>
+R was developed by statisticians and data analysts. It is free and open source, has capability to save scripts, and many resources for learning, and easy for developers to share software implementations.
+</p>
+<p>
+We can us install package scripts and library function.
+</p>
+<pre><code># installing the dslabs package
+install.packages(&quot;dslabs&quot;)
+# loading the dslabs package into the R session
+library(dslabs)
+# to install two packages at the same time
+install.packages(c(&quot;tidyverse&quot;, &quot;dslabs&quot;)） 
+</code></pre><h2>
+Objects in R
+</h2>
+<ul>
+<li>We can assign by <- </li>
+<li>We can type the variable name or use print() function</li>
+<li>Objects are stored in names, it can be variables, or functions</li>
+<li>ls() shows the names of object</li>
+</ul>
+<pre><code>a &lt;- 1
+b &lt;- 1
+c &lt;- -1
+# solving the quadratic equation
+(-b + sqrt(b^2 - 4*a*c))/(2*a)
+</code></pre><h2>Data Types</h2>
+<ul>
+<li>class() help us determine the type of object</li>
+<li>Data frames can be thought as tables with rows representing observations and columns representing different variables</li>
+<li>To access data from columns of a data frame, we use dollar symbols, $, which is called the accessor</li>
+<li>A vector is an object consisting of several entries such as logical, character, numeric (one vector has one type only)</li>
+<li>We use quotes to distinguish b/w variable names and character strings</li>
+<li>Factors are useful for storing categorical data, & more memory eficient than storing characters.
+EX) levels(murders$region)</li>
+<li>What is the difference b/w factors and vectors? - factors have levels(chars) Also can have duplicates!, vectors have logical, numeric, character, ...</li>
+</ul>
+<pre><code># determining that the murders dataset is of the &quot;data frame&quot; class
+class(murders)
+# finding out more about the structure of the object
+str(murders)
+# showing the first 6 lines of the dataset
+head(murders)
 
-            
-            
-                
-                    <a class="tag" href="/tags/rbasics">#RBasics</a>
-                
-                    <a class="tag" href="/tags/wk1">#wk1</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/rbasics/w2/">
-                    W2 - 
-                </a>
-            </h2>
-            <div><p> Week 1 review </p></div>
-            <div class="post-footer">
-            <time>March 10, 2020</time>
+# using the accessor operator to obtain the population column
+murders$population
+# displaying the variable names in the murders dataset
+names(murders)
+# determining how many entries are in a vector
+pop &lt;- murders$population
+length(pop)
+# vectors can be of class numeric and character
+class(pop)
+class(murders$state)
 
-            
-            
-                
-                    <a class="tag" href="/tags/rbasics">#RBasics</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/rbasics/motivation/">
-                    Motivation
-                </a>
-            </h2>
-            <div><p>Motivation of learning data science and R</p></div>
-            <div class="post-footer">
-            <time>March 9, 2020</time>
-
-            
-            
-                
-                    <a class="tag" href="/tags/rbasics">#RBasics</a>
-                
-            
-            </div> 
-           
-        </article>
-        
+# factors are another type of class
+class(murders$region)
+# obtaining the levels of a factor
+levels(murders$region)
+</code></pre>
+        </p>
     </div>
+    <div id="disqus_thread"></div>
+    <script>
+    
+    
+
+    
+
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ds-blog-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+    <div class="page-footer">
         
-        <div class="paginator">
+        <hr class="footer-divider">
         
+            <a class="tag" href="/tags/rbasics">#RBasics</a>
         
+            <a class="tag" href="/tags/wk1">#wk1</a>
+        
+      
     </div>
+
 
         
 
