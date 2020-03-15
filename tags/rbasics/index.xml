@@ -6,10 +6,19 @@
     <description>Recent content in RBasics on DS Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Mar 2020 12:03:24 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 15 Mar 2020 15:17:22 -0400</lastBuildDate>
     
 	<atom:link href="https://jinmc.github.io/ds_blog/tags/rbasics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vectors in R</title>
+      <link>https://jinmc.github.io/ds_blog/rbasics/vectors/</link>
+      <pubDate>Sun, 15 Mar 2020 15:17:22 -0400</pubDate>
+      
+      <guid>https://jinmc.github.io/ds_blog/rbasics/vectors/</guid>
+      <description>vector manipulations and syntax</description>
+    </item>
     
     <item>
       <title>R_Intro</title>
@@ -18,15 +27,6 @@
       
       <guid>https://jinmc.github.io/ds_blog/rbasics/r_intro/</guid>
       <description>About R and RStudio</description>
-    </item>
-    
-    <item>
-      <title>W2 - </title>
-      <link>https://jinmc.github.io/ds_blog/rbasics/w2/</link>
-      <pubDate>Tue, 10 Mar 2020 23:30:26 -0400</pubDate>
-      
-      <guid>https://jinmc.github.io/ds_blog/rbasics/w2/</guid>
-      <description> Week 1 review </description>
     </item>
     
     <item>
