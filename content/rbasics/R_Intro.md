@@ -73,7 +73,7 @@ pop <- murders$population
 length(pop)
 # vectors can be of class numeric and character
 class(pop)
-class(murders$state)
+class(murders$state)s
 
 # factors are another type of class
 class(murders$region)
