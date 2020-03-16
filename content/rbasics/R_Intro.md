@@ -73,10 +73,15 @@ pop <- murders$population
 length(pop)
 # vectors can be of class numeric and character
 class(pop)
-class(murders$state)s
+class(murders$state)
 
 # factors are another type of class
 class(murders$region)
 # obtaining the levels of a factor
 levels(murders$region)
+
+# creating Dataframes
+states <- murders$state
+ranks <- rank(murders$population)
+my_df <- data.frame(name = states, rank = ranks)
 ```
