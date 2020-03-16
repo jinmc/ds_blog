@@ -6,10 +6,19 @@
     <description>Recent content on DS Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Mar 2020 15:17:22 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2020 23:31:23 -0400</lastBuildDate>
     
 	<atom:link href="https://jinmc.github.io/ds_blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vector sorting</title>
+      <link>https://jinmc.github.io/ds_blog/rbasics/vector_sorting/</link>
+      <pubDate>Sun, 15 Mar 2020 16:39:05 -0400</pubDate>
+      
+      <guid>https://jinmc.github.io/ds_blog/rbasics/vector_sorting/</guid>
+      <description>sort(), order(), rank(), max, min functions</description>
+    </item>
     
     <item>
       <title>Vectors in R</title>
@@ -30,11 +39,11 @@
     </item>
     
     <item>
-      <title>Motivation</title>
-      <link>https://jinmc.github.io/ds_blog/rbasics/motivation/</link>
+      <title>Motivation of learning Data Science and R</title>
+      <link>https://jinmc.github.io/ds_blog/motivation/</link>
       <pubDate>Mon, 09 Mar 2020 23:31:23 -0400</pubDate>
       
-      <guid>https://jinmc.github.io/ds_blog/rbasics/motivation/</guid>
+      <guid>https://jinmc.github.io/ds_blog/motivation/</guid>
       <description>Motivation of learning data science and R</description>
     </item>
     

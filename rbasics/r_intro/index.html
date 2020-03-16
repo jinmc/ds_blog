@@ -50,7 +50,7 @@
 </header>
   <div class="nav-menu">
   
-    <a class="color-link nav-link" href="/ds_blog/about/">About</a>
+    <a class="color-link nav-link" href="/ds_blog/motivation/">Motivation</a>
   
     <a class="color-link nav-link" href="/ds_blog/tags/">Tags</a>
   
@@ -206,12 +206,17 @@ pop &lt;- murders$population
 length(pop)
 # vectors can be of class numeric and character
 class(pop)
-class(murders$state)s
+class(murders$state)
 
 # factors are another type of class
 class(murders$region)
 # obtaining the levels of a factor
 levels(murders$region)
+
+# creating Dataframes
+states &lt;- murders$state
+ranks &lt;- rank(murders$population)
+my_df &lt;- data.frame(name = states, rank = ranks)
 </code></pre>
         </p>
     </div>
@@ -237,7 +242,7 @@ levels(murders$region)
         
             <a class="tag" href="/tags/rbasics">#RBasics</a>
         
-            <a class="tag" href="/tags/wk1">#wk1</a>
+            <a class="tag" href="/tags/rbasics_wk1">#RBasics_wk1</a>
         
       
     </div>

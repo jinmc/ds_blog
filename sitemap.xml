@@ -3,32 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jinmc.github.io/ds_blog/</loc>
-    <lastmod>2020-03-15T15:17:22-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jinmc.github.io/ds_blog/tags/rbasics/</loc>
-    <lastmod>2020-03-15T15:17:22-04:00</lastmod>
+    <lastmod>2020-03-15T16:39:05-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://jinmc.github.io/ds_blog/rbasics/</loc>
-    <lastmod>2020-03-15T15:17:22-04:00</lastmod>
+    <lastmod>2020-03-15T16:39:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinmc.github.io/ds_blog/tags/rbasics_wk2/</loc>
+    <lastmod>2020-03-15T16:39:05-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://jinmc.github.io/ds_blog/tags/</loc>
-    <lastmod>2020-03-15T15:17:22-04:00</lastmod>
+    <lastmod>2020-03-15T16:39:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinmc.github.io/ds_blog/rbasics/vector_sorting/</loc>
+    <lastmod>2020-03-15T16:39:05-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://jinmc.github.io/ds_blog/rbasics/vectors/</loc>
-    <lastmod>2020-03-15T15:17:22-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jinmc.github.io/ds_blog/tags/wk2/</loc>
     <lastmod>2020-03-15T15:17:22-04:00</lastmod>
   </url>
   
@@ -38,12 +38,17 @@
   </url>
   
   <url>
-    <loc>https://jinmc.github.io/ds_blog/tags/wk1/</loc>
+    <loc>https://jinmc.github.io/ds_blog/tags/rbasics_wk1/</loc>
     <lastmod>2020-03-15T12:03:24-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jinmc.github.io/ds_blog/rbasics/motivation/</loc>
+    <loc>https://jinmc.github.io/ds_blog/</loc>
+    <lastmod>2020-03-09T23:31:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinmc.github.io/ds_blog/motivation/</loc>
     <lastmod>2020-03-09T23:31:23-04:00</lastmod>
   </url>
   
