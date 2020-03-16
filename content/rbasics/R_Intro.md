@@ -3,7 +3,7 @@ title: "R_Intro"
 date: 2020-03-15T12:03:24-04:00
 draft: false
 summary: "About R and RStudio"
-tags: ["RBasics", "wk1"]
+tags: ["RBasics", "RBasics_wk1"]
 ---
 <h2>
 What is R and R Studio?

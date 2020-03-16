@@ -2,7 +2,7 @@
 title: "Vectors in R"
 date: 2020-03-15T15:17:22-04:00
 draft: false
-tags: ["RBasics", "wk2"]
+tags: ["RBasics", "RBasics_wk2"]
 summary: "vector manipulations and syntax"
 ---
 
