@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Indexing the data</title>
+      <link>https://jinmc.github.io/ds_blog/rbasics/indexing/</link>
+      <pubDate>Mon, 16 Mar 2020 13:43:55 -0400</pubDate>
+      
+      <guid>https://jinmc.github.io/ds_blog/rbasics/indexing/</guid>
+      <description>What is indexing and how do we use it</description>
+    </item>
+    
+    <item>
       <title>Vector sorting</title>
       <link>https://jinmc.github.io/ds_blog/rbasics/vector_sorting/</link>
       <pubDate>Sun, 15 Mar 2020 16:39:05 -0400</pubDate>

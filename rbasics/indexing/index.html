@@ -29,8 +29,6 @@
     
  
     
-    <link rel="alternate" type="application/rss+xml" href="https://jinmc.github.io/ds_blog/tags/index.xml" title="DS Blog" />
-    
     
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123967699-4"></script>
@@ -148,21 +146,87 @@
 </nav>
         <div id="content" class="content-container">
         
+<h1 class="post-title">Indexing the data</h1>
+    <time>March 16, 2020</time>
+    <div>
+        <p>
+        <h2>What is indexing?</h2>
+<p>
+In dataframes(tables) there are multiple vectors, and accessing each vectors by other vectors would be done by 
+indexing. Indexing is done by using logicals(boolean) and we can use logicals to be operated by logical operators.
+Also, logical vectors can be coerced into numeric, so we can easily use sum() function to get the sum of all the true values.
+</p>
+<pre><code># defining murder rate as before
+murder_rate &lt;- murders$total / murders$population * 100000
+# creating a logical vector that specifies if the murder rate in that state is less than or equal to 0.71
+index &lt;- murder_rate &lt;= 0.71
+# determining which states have murder rates less than or equal to 0.71
+murders$state[index]
+# calculating how many states have a murder rate less than or equal to 0.71
+sum(index)
 
-<h1>Tags</h1>
+# creating the two logical vectors representing our conditions
+west &lt;- murders$region == &quot;West&quot;
+safe &lt;- murder_rate &lt;= 1
+# defining an index and identifying states with both conditions true
+index &lt;- safe &amp; west
+murders$state[index]
+</code></pre><h2>Indexing functions</h2>
 <ul>
-    
-        <li><a href="https://jinmc.github.io/ds_blog/tags/rbasics/">RBasics</a> 4</li>
-    
-        <li><a href="https://jinmc.github.io/ds_blog/tags/rbasics_wk1/">RBasics_wk1</a> 1</li>
-    
-        <li><a href="https://jinmc.github.io/ds_blog/tags/rbasics_wk2/">RBasics_wk2</a> 2</li>
-    
-        <li><a href="https://jinmc.github.io/ds_blog/tags/rbasics_wk3/">RBasics_wk3</a> 1</li>
-    
+<li>which() -> tells us which indexes are true ex)  which(murders$state == "Massachusetts")</li>
+<li>match() -> tells us which indices match in the second vector</li>
+<li>%in% -> see if first vector elements are in second vector</li>
 </ul>
+<pre><code>x &lt;- c(FALSE, TRUE, FALSE, TRUE, TRUE, FALSE)
+which(x)    # returns indices that are TRUE
 
-<div class="page-footer"></div>
+# to determine the murder rate in Massachusetts we may do the following
+index &lt;- which(murders$state == &quot;Massachusetts&quot;)
+index
+murder_rate[index]
+
+# to obtain the indices and subsequent murder rates of New York, Florida, Texas, we do:
+index &lt;- match(c(&quot;New York&quot;, &quot;Florida&quot;, &quot;Texas&quot;), murders$state)
+index
+murders$state[index]
+murder_rate[index]
+
+x &lt;- c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;)
+y &lt;- c(&quot;a&quot;, &quot;d&quot;, &quot;f&quot;)
+y %in% x
+
+# to see if Boston, Dakota, and Washington are states
+c(&quot;Boston&quot;, &quot;Dakota&quot;, &quot;Washington&quot;) %in% murders$state
+</code></pre>
+        </p>
+    </div>
+    <div id="disqus_thread"></div>
+    <script>
+    
+    
+
+    
+
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ds-blog-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="/tags/rbasics">#RBasics</a>
+        
+            <a class="tag" href="/tags/rbasics_wk3">#RBasics_wk3</a>
+        
+      
+    </div>
+
 
         
 

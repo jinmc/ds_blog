@@ -6,10 +6,19 @@
     <description>Recent content in RBasics on DS Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Mar 2020 16:39:05 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2020 13:43:55 -0400</lastBuildDate>
     
 	<atom:link href="https://jinmc.github.io/ds_blog/tags/rbasics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Indexing the data</title>
+      <link>https://jinmc.github.io/ds_blog/rbasics/indexing/</link>
+      <pubDate>Mon, 16 Mar 2020 13:43:55 -0400</pubDate>
+      
+      <guid>https://jinmc.github.io/ds_blog/rbasics/indexing/</guid>
+      <description>What is indexing and how do we use it</description>
+    </item>
     
     <item>
       <title>Vector sorting</title>
