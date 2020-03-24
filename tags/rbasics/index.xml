@@ -6,10 +6,19 @@
     <description>Recent content in RBasics on DS Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Mar 2020 21:53:43 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2020 23:45:08 -0400</lastBuildDate>
     
 	<atom:link href="https://jinmc.github.io/ds_blog/tags/rbasics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Basic Programming in R</title>
+      <link>https://jinmc.github.io/ds_blog/rbasics/programmingr/</link>
+      <pubDate>Mon, 23 Mar 2020 23:45:08 -0400</pubDate>
+      
+      <guid>https://jinmc.github.io/ds_blog/rbasics/programmingr/</guid>
+      <description>Conditionals, loops, and functions</description>
+    </item>
     
     <item>
       <title>Data Wrangling and Basic Plotting</title>

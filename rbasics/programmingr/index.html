@@ -29,8 +29,6 @@
     
  
     
-    <link rel="alternate" type="application/rss+xml" href="https://jinmc.github.io/ds_blog/tags/index.xml" title="DS Blog" />
-    
     
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123967699-4"></script>
@@ -148,23 +146,115 @@
 </nav>
         <div id="content" class="content-container">
         
+<h1 class="post-title">Basic Programming in R</h1>
+    <time>March 23, 2020</time>
+    <div>
+        <p>
+        <h2>Conditionals</h2>
+<p>
+Like any other programming, R has conditionals, the if and else statemenets.
+It would be so frustrating if it didn't have. One unique function R has is the ifelse function, which does the same thing as if else statement but making it in one line. It is also useful because it works on vectors! Also, any(), and all() will return either true or false if any of the element is true or all of the element are true or not.
+</p>
+<pre><code>if (boolean) {
+    print(&quot;true&quot;)
+} else {
+    print(&quot;false&quot;)
+}
 
-<h1>Tags</h1>
-<ul>
-    
-        <li><a href="https://jinmc.github.io/ds_blog/tags/rbasics/">RBasics</a> 6</li>
-    
-        <li><a href="https://jinmc.github.io/ds_blog/tags/rbasics_wk1/">RBasics_wk1</a> 1</li>
-    
-        <li><a href="https://jinmc.github.io/ds_blog/tags/rbasics_wk2/">RBasics_wk2</a> 2</li>
-    
-        <li><a href="https://jinmc.github.io/ds_blog/tags/rbasics_wk3/">RBasics_wk3</a> 2</li>
-    
-        <li><a href="https://jinmc.github.io/ds_blog/tags/rbasics_wk4/">RBasics_wk4</a> 1</li>
-    
-</ul>
+# the ifelse() function works similarly to an if-else conditional
+a &lt;- 0
+ifelse(a &gt; 0, 1/a, NA)
 
-<div class="page-footer"></div>
+# the ifelse() function is particularly useful on vectors
+a &lt;- c(0,1,2,-4,5)
+result &lt;- ifelse(a &gt; 0, 1/a, NA)
+
+# the ifelse() function is also helpful for replacing missing values
+data(na_example)
+no_nas &lt;- ifelse(is.na(na_example), 0, na_example) 
+sum(is.na(no_nas))
+
+# the any() and all() functions evaluate logical vectors
+z &lt;- c(TRUE, TRUE, FALSE)
+any(z) # TRUE
+all(z) # FALSE
+</code></pre><h2>functions</h2>
+<p>
+We can define functions to repeat or reuse code, just like other programming languages, also.
+We can define them by arrow function and function() syntax. Also, one thing to note is that the variables defined inside the function only matters in the function scope itself. We can also have more than one parameters and set default values as well.
+</p>
+<pre><code># example of defining a function to compute the average of a vector x
+avg &lt;- function(x){
+  s &lt;- sum(x)
+  n &lt;- length(x)
+  s/n
+}
+
+# functions can have multiple arguments as well as default values
+avg &lt;- function(x, arithmetic = TRUE){
+  n &lt;- length(x)
+  ifelse(arithmetic, sum(x)/n, prod(x)^(1/n))
+}
+</code></pre><h2>For loops</h2>
+<p>The syntax is for (n in [some_range]) {} . We can use this to populate vectors, as example.</p>
+<pre><code># creating a function that computes the sum of integers 1 through n
+compute_s_n &lt;- function(n){
+  x &lt;- 1:n
+  sum(x)
+}
+
+# a very simple for-loop
+for(i in 1:5){
+  print(i)
+}
+
+# a for-loop for our summation
+m &lt;- 25
+s_n &lt;- vector(length = m) # create an empty vector
+for(n in 1:m){
+  s_n[n] &lt;- compute_s_n(n)
+}
+
+# creating a plot for our summation function
+n &lt;- 1:m
+plot(n, s_n)
+
+# a table of values comparing our function to the summation formula
+head(data.frame(s_n = s_n, formula = n*(n+1)/2))
+
+# overlaying our function with the summation formula
+plot(n, s_n)
+lines(n, n*(n+1)/2)
+</code></pre>
+        </p>
+    </div>
+    <div id="disqus_thread"></div>
+    <script>
+    
+    
+
+    
+
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ds-blog-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="/tags/rbasics">#RBasics</a>
+        
+            <a class="tag" href="/tags/rbasics_wk4">#RBasics_wk4</a>
+        
+      
+    </div>
+
 
         
 
