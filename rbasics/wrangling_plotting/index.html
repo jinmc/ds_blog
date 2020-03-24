@@ -2,7 +2,6 @@
 
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.65.3" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,8 +28,6 @@
     
     
  
-    
-    <link rel="alternate" type="application/rss+xml" href="https://jinmc.github.io/ds_blog/index.xml" title="DS Blog" />
     
     
 
@@ -149,131 +146,102 @@
 </nav>
         <div id="content" class="content-container">
         
-<div class = "article-content">
-        
-        <div class="description">
-            <p>This is a blog from Jim to note and record studying about Data Science</p>
-        </div>
-        
-        
-        
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/rbasics/wrangling_plotting/">
-                    Data Wrangling and Basic Plotting
-                </a>
-            </h2>
-            <div><p>Using Dplyr package - mutate(), filter() and select(), and pipe %&gt;%, plotting with histogram and boxplot</p></div>
-            <div class="post-footer">
-            <time>March 23, 2020</time>
+<h1 class="post-title">Data Wrangling and Basic Plotting</h1>
+    <time>March 23, 2020</time>
+    <div>
+        <p>
+        <h2>
+Data Wrangling with Dplyr package
+</h2>
+<p>
+Data wrangling, or munging, is to transform the mapping data to another form of data 
+so that we can use it with ease. So to say, it is a process of cleaning enriching raw data.
+We can use below functions for data wrangling.
+</p>
+<ul>
+<li>mutate() - we can add new column, or change existing one</li>
+<li>filter() - filter the data by subsetting rows</li>
+<li>select() - subset the data by subsetting columns</li>
+<li>pipe operattor, %>% - perform a series of action by chaining them together</li>
+</ul>
+<pre><code># installing and loading the dplyr package
+install.packages(&quot;dplyr&quot;)
+library(dplyr)
 
-            
-            
-                
-                    <a class="tag" href="/tags/rbasics">#RBasics</a>
-                
-                    <a class="tag" href="/tags/rbasics_wk3">#RBasics_wk3</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/rbasics/indexing/">
-                    Indexing the data
-                </a>
-            </h2>
-            <div><p>What is indexing and how do we use it</p></div>
-            <div class="post-footer">
-            <time>March 16, 2020</time>
+# adding a column with mutate called rate
+library(dslabs)
+data(&quot;murders&quot;)
 
-            
-            
-                
-                    <a class="tag" href="/tags/rbasics">#RBasics</a>
-                
-                    <a class="tag" href="/tags/rbasics_wk3">#RBasics_wk3</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/rbasics/vector_sorting/">
-                    Vector sorting
-                </a>
-            </h2>
-            <div><p>sort(), order(), rank(), max, min functions</p></div>
-            <div class="post-footer">
-            <time>March 15, 2020</time>
+head(murders) # shows top 10 
+murders &lt;- mutate(murders, rate = total / population * 100000)
 
-            
-            
-                
-                    <a class="tag" href="/tags/rbasics">#RBasics</a>
-                
-                    <a class="tag" href="/tags/rbasics_wk2">#RBasics_wk2</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/rbasics/vectors/">
-                    Vectors in R
-                </a>
-            </h2>
-            <div><p>vector manipulations and syntax</p></div>
-            <div class="post-footer">
-            <time>March 15, 2020</time>
+# subsetting with filter
+filter(murders, rate &lt;= 0.71)
 
-            
-            
-                
-                    <a class="tag" href="/tags/rbasics">#RBasics</a>
-                
-                    <a class="tag" href="/tags/rbasics_wk2">#RBasics_wk2</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/rbasics/r_intro/">
-                    R_Intro
-                </a>
-            </h2>
-            <div><p>About R and RStudio</p></div>
-            <div class="post-footer">
-            <time>March 15, 2020</time>
+# selecting columns with select
+new_table &lt;- select(murders, state, region, rate)
 
-            
-            
-                
-                    <a class="tag" href="/tags/rbasics">#RBasics</a>
-                
-                    <a class="tag" href="/tags/rbasics_wk1">#RBasics_wk1</a>
-                
-            
-            </div> 
-           
-        </article>
-        
+# using the pipe
+murders %&gt;% select(state, region, rate) %&gt;% filter(rate &lt;= 0.71)
+</code></pre><h2>Creating Data Frames</h2>
+<p>
+We can create data frames using data.frame function. Note that data framew in default 
+turns characters to factors, so we should include stringsAsFactors = FALSE at last. In the example, to make names as a character, we include this element.
+</p>
+```
+# creating a data frame with stringAsFactors = FALSE
+grades <- data.frame(names = c("John", "Juan", "Jean", "Yao"), 
+                     exam_1 = c(95, 80, 90, 85), 
+                     exam_2 = c(90, 85, 85, 90),
+                     stringsAsFactors = FALSE)
+```
+<h2>Basic Plotting</h2>
+<p>By plotting data, we can quickly see what's going on, and realize the importance of the situation. R lets you to draw plots with simple syntax.</p>
+<ul>
+<li>plot() - simple scatterplot</li>
+<li>hist() - makes a histogram that gives graphical summary about the general summary</li>
+<li>boxplot() - provides a compact summary of a distribution than histogram and more useful for comparing distributions</li>
+</ul>
+<pre><code># a simple scatterplot of total murders versus population
+x &lt;- murders$population /10^6
+y &lt;- murders$total
+plot(x, y)
+
+# a histogram of murder rates
+hist(murders$rate)
+
+# boxplots of murder rates by region
+boxplot(rate~region, data = murders)
+</code></pre>
+        </p>
     </div>
+    <div id="disqus_thread"></div>
+    <script>
+    
+    
+
+    
+
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ds-blog-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+    <div class="page-footer">
         
-        <div class="paginator">
+        <hr class="footer-divider">
         
+            <a class="tag" href="/tags/rbasics">#RBasics</a>
         
+            <a class="tag" href="/tags/rbasics_wk3">#RBasics_wk3</a>
+        
+      
     </div>
+
 
         
 
