@@ -13,19 +13,19 @@
     
     <item>
       <title>Vector sorting</title>
-      <link>https://jinmc.github.io/ds_blog/rbasics/vector_sorting/</link>
+      <link>https://jinmc.github.io/ds_blog/posts/rbasics/vector_sorting/</link>
       <pubDate>Sun, 15 Mar 2020 16:39:05 -0400</pubDate>
       
-      <guid>https://jinmc.github.io/ds_blog/rbasics/vector_sorting/</guid>
+      <guid>https://jinmc.github.io/ds_blog/posts/rbasics/vector_sorting/</guid>
       <description>sort(), order(), rank(), max, min functions</description>
     </item>
     
     <item>
       <title>Vectors in R</title>
-      <link>https://jinmc.github.io/ds_blog/rbasics/vectors/</link>
+      <link>https://jinmc.github.io/ds_blog/posts/rbasics/vectors/</link>
       <pubDate>Sun, 15 Mar 2020 15:17:22 -0400</pubDate>
       
-      <guid>https://jinmc.github.io/ds_blog/rbasics/vectors/</guid>
+      <guid>https://jinmc.github.io/ds_blog/posts/rbasics/vectors/</guid>
       <description>vector manipulations and syntax</description>
     </item>
     

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on DS Blog</title>
+    <link>https://jinmc.github.io/ds_blog/posts/</link>
+    <description>Recent content in Posts on DS Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Jun 2020 06:17:12 -0400</lastBuildDate>
+    
+	<atom:link href="https://jinmc.github.io/ds_blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

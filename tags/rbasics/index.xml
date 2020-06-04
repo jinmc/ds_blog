@@ -13,55 +13,55 @@
     
     <item>
       <title>Basic Programming in R</title>
-      <link>https://jinmc.github.io/ds_blog/rbasics/programmingr/</link>
+      <link>https://jinmc.github.io/ds_blog/posts/rbasics/programmingr/</link>
       <pubDate>Mon, 23 Mar 2020 23:45:08 -0400</pubDate>
       
-      <guid>https://jinmc.github.io/ds_blog/rbasics/programmingr/</guid>
+      <guid>https://jinmc.github.io/ds_blog/posts/rbasics/programmingr/</guid>
       <description>Conditionals, loops, and functions</description>
     </item>
     
     <item>
       <title>Data Wrangling and Basic Plotting</title>
-      <link>https://jinmc.github.io/ds_blog/rbasics/wrangling_plotting/</link>
+      <link>https://jinmc.github.io/ds_blog/posts/rbasics/wrangling_plotting/</link>
       <pubDate>Mon, 23 Mar 2020 21:53:43 -0400</pubDate>
       
-      <guid>https://jinmc.github.io/ds_blog/rbasics/wrangling_plotting/</guid>
+      <guid>https://jinmc.github.io/ds_blog/posts/rbasics/wrangling_plotting/</guid>
       <description>Using Dplyr package - mutate(), filter() and select(), and pipe %&amp;gt;%, plotting with histogram and boxplot</description>
     </item>
     
     <item>
       <title>Indexing the data</title>
-      <link>https://jinmc.github.io/ds_blog/rbasics/indexing/</link>
+      <link>https://jinmc.github.io/ds_blog/posts/rbasics/indexing/</link>
       <pubDate>Mon, 16 Mar 2020 13:43:55 -0400</pubDate>
       
-      <guid>https://jinmc.github.io/ds_blog/rbasics/indexing/</guid>
+      <guid>https://jinmc.github.io/ds_blog/posts/rbasics/indexing/</guid>
       <description>What is indexing and how do we use it</description>
     </item>
     
     <item>
       <title>Vector sorting</title>
-      <link>https://jinmc.github.io/ds_blog/rbasics/vector_sorting/</link>
+      <link>https://jinmc.github.io/ds_blog/posts/rbasics/vector_sorting/</link>
       <pubDate>Sun, 15 Mar 2020 16:39:05 -0400</pubDate>
       
-      <guid>https://jinmc.github.io/ds_blog/rbasics/vector_sorting/</guid>
+      <guid>https://jinmc.github.io/ds_blog/posts/rbasics/vector_sorting/</guid>
       <description>sort(), order(), rank(), max, min functions</description>
     </item>
     
     <item>
       <title>Vectors in R</title>
-      <link>https://jinmc.github.io/ds_blog/rbasics/vectors/</link>
+      <link>https://jinmc.github.io/ds_blog/posts/rbasics/vectors/</link>
       <pubDate>Sun, 15 Mar 2020 15:17:22 -0400</pubDate>
       
-      <guid>https://jinmc.github.io/ds_blog/rbasics/vectors/</guid>
+      <guid>https://jinmc.github.io/ds_blog/posts/rbasics/vectors/</guid>
       <description>vector manipulations and syntax</description>
     </item>
     
     <item>
       <title>R_Intro</title>
-      <link>https://jinmc.github.io/ds_blog/rbasics/r_intro/</link>
+      <link>https://jinmc.github.io/ds_blog/posts/rbasics/r_intro/</link>
       <pubDate>Sun, 15 Mar 2020 12:03:24 -0400</pubDate>
       
-      <guid>https://jinmc.github.io/ds_blog/rbasics/r_intro/</guid>
+      <guid>https://jinmc.github.io/ds_blog/posts/rbasics/r_intro/</guid>
       <description>About R and RStudio</description>
     </item>
     
