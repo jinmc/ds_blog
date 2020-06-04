@@ -24,7 +24,7 @@ summaryLength = 10 # Configure how long the post summary should be on the homepa
 	# Add links to your accounts. Remove the ones you don't want to include.
 	# Main
 	email = "mailto:jinmochong@gmail.com"
-        facebook = "https://www.facebook.com/profile.php?id=100006651933516"
+  facebook = "https://www.facebook.com/profile.php?id=100006651933516"
 #        twitter = "#"
 #	instagram = "#"
 #	tumblr = "#"
