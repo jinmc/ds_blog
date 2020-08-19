@@ -3,13 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jinmc.github.io/ds_blog/archives/</loc>
-    <lastmod>2020-06-04T06:20:34-04:00</lastmod>
+    <loc>https://jinmc.github.io/ds_blog/posts/cs50_ai/2.-uncertainty/</loc>
+    <lastmod>2020-08-19T11:59:36+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinmc.github.io/ds_blog/tags/cs50_ai/</loc>
+    <lastmod>2020-08-19T11:59:36+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://jinmc.github.io/ds_blog/</loc>
-    <lastmod>2020-06-04T06:17:12-04:00</lastmod>
+    <lastmod>2020-08-19T11:59:36+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinmc.github.io/ds_blog/tags/</loc>
+    <lastmod>2020-08-19T11:59:36+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinmc.github.io/ds_blog/posts/cs50_ai/1.-knowledge/</loc>
+    <lastmod>2020-08-19T09:17:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinmc.github.io/ds_blog/posts/cs50_ai/0.-search/</loc>
+    <lastmod>2020-08-17T20:09:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinmc.github.io/ds_blog/posts/cs50_ai/</loc>
+    <lastmod>2020-08-17T06:11:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinmc.github.io/ds_blog/archives/</loc>
+    <lastmod>2020-06-04T06:20:34-04:00</lastmod>
   </url>
   
   <url>
@@ -44,11 +74,6 @@
   
   <url>
     <loc>https://jinmc.github.io/ds_blog/tags/rbasics_wk4/</loc>
-    <lastmod>2020-03-23T23:45:08-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jinmc.github.io/ds_blog/tags/</loc>
     <lastmod>2020-03-23T23:45:08-04:00</lastmod>
   </url>
   
