@@ -3,22 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jinmc.github.io/ds_blog/posts/cs50_ai/2.-uncertainty/</loc>
-    <lastmod>2020-08-19T11:59:36+09:00</lastmod>
+    <loc>https://jinmc.github.io/ds_blog/posts/cs50_ai/6.-language/</loc>
+    <lastmod>2020-08-19T14:22:40+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://jinmc.github.io/ds_blog/tags/cs50_ai/</loc>
-    <lastmod>2020-08-19T11:59:36+09:00</lastmod>
+    <lastmod>2020-08-19T14:22:40+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://jinmc.github.io/ds_blog/</loc>
-    <lastmod>2020-08-19T11:59:36+09:00</lastmod>
+    <lastmod>2020-08-19T14:22:40+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://jinmc.github.io/ds_blog/tags/</loc>
+    <lastmod>2020-08-19T14:22:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinmc.github.io/ds_blog/posts/cs50_ai/5.-neural_networks/</loc>
+    <lastmod>2020-08-19T14:17:11+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinmc.github.io/ds_blog/posts/cs50_ai/4.-learning/</loc>
+    <lastmod>2020-08-19T14:09:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinmc.github.io/ds_blog/posts/cs50_ai/3.-optimization/</loc>
+    <lastmod>2020-08-19T14:04:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinmc.github.io/ds_blog/posts/cs50_ai/2.-uncertainty/</loc>
     <lastmod>2020-08-19T11:59:36+09:00</lastmod>
   </url>
   
