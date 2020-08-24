@@ -6,10 +6,19 @@
     <description>Recent content in Tags on DS Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Aug 2020 14:22:40 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2020 15:13:13 +0900</lastBuildDate>
     
 	<atom:link href="https://jinmc.github.io/ds_blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ml_andrew_ng</title>
+      <link>https://jinmc.github.io/ds_blog/tags/ml_andrew_ng/</link>
+      <pubDate>Thu, 20 Aug 2020 15:13:13 +0900</pubDate>
+      
+      <guid>https://jinmc.github.io/ds_blog/tags/ml_andrew_ng/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>cs50_ai</title>
