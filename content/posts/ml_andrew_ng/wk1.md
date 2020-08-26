@@ -1,5 +1,5 @@
 ---
-title: "Wk1"
+title: "Wk1 - Introduction to ML"
 date: 2020-08-20T15:13:13+09:00
 draft: false
 tags: ["ml_andrew_ng"]
