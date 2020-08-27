@@ -25,5 +25,6 @@ tags: ["ml_andrew_ng"]
   <img src="{{<baseurl>}}/ml_andrew_ng/wk2/ml_wk2_18.jpeg" alt="ml_wk2_18" width="600" height="700">
   <img src="{{<baseurl>}}/ml_andrew_ng/wk2/ml_wk2_19.jpeg" alt="ml_wk2_19" width="600" height="700">
   <img src="{{<baseurl>}}/ml_andrew_ng/wk2/ml_wk2_20.jpeg" alt="ml_wk2_20" width="600" height="700">
+  <img src="{{<baseurl>}}/ml_andrew_ng/wk2/ml_wk2_21.jpeg" alt="ml_wk2_21" width="600" height="700">
 
 </figure>
