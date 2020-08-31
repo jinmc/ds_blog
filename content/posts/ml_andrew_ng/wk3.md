@@ -23,8 +23,6 @@ tags: ["ml_andrew_ng"]
   <img src="{{<baseurl>}}/ml_andrew_ng/wk3/16.png" alt="16" width="600" height="700">
   <img src="{{<baseurl>}}/ml_andrew_ng/wk3/17.png" alt="17" width="600" height="700">
   <img src="{{<baseurl>}}/ml_andrew_ng/wk3/18.png" alt="18" width="600" height="700">
-  <img src="{{<baseurl>}}/ml_andrew_ng/wk3/19.png" alt="19" width="600" height="700">
-  <img src="{{<baseurl>}}/ml_andrew_ng/wk3/20.png" alt="20" width="600" height="700">
-  <img src="{{<baseurl>}}/ml_andrew_ng/wk3/21.png" alt="21" width="600" height="700">
+
 </figure>
 
