@@ -6,10 +6,19 @@
     <description>Recent content on DS Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Sep 2020 07:36:31 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2020 11:36:49 +0900</lastBuildDate>
     
 	<atom:link href="https://jinmc.github.io/ds_blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Wk6 - Advice for Applying Machine Learning</title>
+      <link>https://jinmc.github.io/ds_blog/posts/ml_andrew_ng/wk6/</link>
+      <pubDate>Tue, 08 Sep 2020 11:36:49 +0900</pubDate>
+      
+      <guid>https://jinmc.github.io/ds_blog/posts/ml_andrew_ng/wk6/</guid>
+      <description>  </description>
+    </item>
     
     <item>
       <title>Wk5 - Neural Networks (Learning)</title>
