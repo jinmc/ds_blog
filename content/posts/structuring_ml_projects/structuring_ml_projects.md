@@ -2,6 +2,7 @@
 title: "Structuring_ml_projects"
 date: 2021-09-22T14:24:46+09:00
 draft: false
+tag: ["machine learning"]
 ---
 
 ## Example methods to imrove your model
