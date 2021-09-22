@@ -6,11 +6,7 @@
     <description>Recent content in RBasics_wk3 on DS Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Mar 2020 21:53:43 -0400</lastBuildDate>
-    
-	<atom:link href="https://jinmc.github.io/ds_blog/tags/rbasics_wk3/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 23 Mar 2020 21:53:43 -0400</lastBuildDate><atom:link href="https://jinmc.github.io/ds_blog/tags/rbasics_wk3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Wrangling and Basic Plotting</title>
       <link>https://jinmc.github.io/ds_blog/posts/rbasics/wrangling_plotting/</link>

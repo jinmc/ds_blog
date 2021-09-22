@@ -6,10 +6,15 @@
     <description>Recent content in Posts on DS Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jun 2020 06:17:12 -0400</lastBuildDate>
-    
-	<atom:link href="https://jinmc.github.io/ds_blog/posts/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 04 Jun 2020 06:17:12 -0400</lastBuildDate><atom:link href="https://jinmc.github.io/ds_blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Structuring_ml_projects</title>
+      <link>https://jinmc.github.io/ds_blog/posts/structuring_ml_projects/structuring_ml_projects/</link>
+      <pubDate>Wed, 22 Sep 2021 14:24:46 +0900</pubDate>
+      
+      <guid>https://jinmc.github.io/ds_blog/posts/structuring_ml_projects/structuring_ml_projects/</guid>
+      <description>Example methods to imrove your model  Collect more data Collect more diverse training set Train longer Try Adam instead of Gradient Descent Try bigger network Try smaller network Try dropout Add L2 regularization Network Architecture   Orthogonalization Orthogonalization means to tune only one thing to achieve one effect!</description>
+    </item>
     
     <item>
       <title>Wk11 - Application Example: Photo OCR</title>

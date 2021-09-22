@@ -2,7 +2,6 @@
 
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.80.0" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,8 +28,6 @@
     
     
  
-    
-    <link rel="alternate" type="application/rss+xml" href="https://jinmc.github.io/ds_blog/index.xml" title="DS Blog" />
     
     
 
@@ -149,130 +146,157 @@
 </nav>
         <div id="content" class="content-container">
         
-<div class = "article-content">
-        
-        <div class="description">
-            <p>This is a blog from Jim to note and record studying about Data Science</p>
-        </div>
-        
-        
-        
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/posts/cs50_ai/3.-optimization/">
-                    3. Optimization
-                </a>
-            </h2>
-            <div><p> </p></div>
-            <div class="post-footer">
-            <time>August 19, 2020</time>
+<h1 class="post-title">Structuring_ml_projects</h1>
+    <time>September 22, 2021</time>
+    <div>
+        <p>
+        <h2 id="example-methods-to-imrove-your-model">Example methods to imrove your model</h2>
+<ul>
+<li>Collect more data</li>
+<li>Collect more diverse training set</li>
+<li>Train longer</li>
+<li>Try Adam instead of Gradient Descent</li>
+<li>Try bigger network</li>
+<li>Try smaller network</li>
+<li>Try dropout</li>
+<li>Add L2 regularization</li>
+<li>Network Architecture</li>
+</ul>
+<hr>
+<h2 id="orthogonalization">Orthogonalization</h2>
+<p>Orthogonalization means to tune only one thing to achieve one effect! Early stopping is a useful method but it affects both training and dev set performance together so it's not good in the sense of orthogonalization.</p>
+<p>Chain of Assumptions in ML</p>
+<p>
+Fit training set well on Cost function (until human level performance) -> (bigger network, Adam)
+</p>
+<p>Fit dev set -> (Regularization, bigger training set)</p>
+<p>Fit test set -> (Bigger dev set) </p>
+<p>Performs well (If not, Change dev set or cost function)</p>
+<hr>
+<h2 id="single-number-evaluation-metric">Single Number Evaluation metric</h2>
+<p>We can get F1 score (Harmonic mean of Precision and Recall) to get Single Number Evaluation. It is important to evaluate the models</p>
+<hr>
+<h2 id="satisficing--optimizing-metrics">Satisficing &amp; Optimizing metrics</h2>
+<p>
+Let's say Accracy and optimization(speed) both matters.
+Satisficing -> at least this much
+Optimizing -> will optimize this as much as possible
+Usually, we have 1 optimizing metric while N-1 satisficing metrics
+</p>
+<hr>
+<h2 id="traindevtest-distributions">Train/Dev/Test Distributions</h2>
+<p>
+Dev/test set should come from the same distribution! Because we don't want to train and pick the wrong model (aim at the wrong direction when we are setting up the dev set!)
+</p>
+<hr>
+<h2 id="size-of-the-dev-and-test-sets">Size of the Dev and Test Sets</h2>
+<p>
+Traditional way of splitting data : 7:3 (no test set), or 6:2:2
+but if you have million (lots of) data, 1% of dev(test) set is ok!
+</p>
+<p>
+Test set should be the amount you feel comfortable (have confidence) and sometimes no test set can be ok also
+</p>
+<hr>
+<h2 id="when-to-change-devtest-sets--distributions">When to Change Dev/Test Sets &amp; Distributions?</h2>
+<p>
+Let's say we have cat detection model. If we have another matter, we should have anti-porn metric, we should set more weight into datasets!
+</p>
+<hr>
+<h2 id="comparing-human-level-performance">Comparing Human level Performance</h2>
+<h4 id="why-human-level">Why Human Level?</h4>
+<p>
+Bayes optimal error -> best possible error
+</p>
+<p>
+It's pretty easy and fast that we can go to human level performance, and often times Bayes error and human level is not that far away! Also, there are some techniques we can use when the performance is below human level performance.
+</p>
+<ul>
+<li>Get labeled data from humans</li>
+<li>Gain insight from manual error analysis: Why did a person get this right?</li>
+<li>Better analysis of bias/variance</li>
+</ul>
+<hr>
+<h2 id="avoidable-bias">Avoidable Bias</h2>
+<p>Example</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Case 1</th>
+<th>Case 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Humans</td>
+<td>1%</td>
+<td>7.5%</td>
+</tr>
+<tr>
+<td>Training Error</td>
+<td>8%</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>Dev error</td>
+<td>10%</td>
+<td>10%</td>
+</tr>
+</tbody>
+</table>
+<p>
+In the case of Case 1, Avoidable Bias is 7%, when Case 2 has 0.5% of avoidable bias. We can tell which area we should focus on. (Error Analysis)
+</p>
+<p>
+Also, we should keep in mind that the most experienced, team of humans should be regarded as human performance, because however experienced the humans are, it will never be better than Bayes error.
+</p>
+<hr>
+<h2 id="surpassing-human-level-performance">Surpassing Human-level Performance</h2>
+<p>
+If training error is above human level performance, we can see as bias, but if it's less than human level performance, it's hard to define if it's overfitting, or Bayes error is smaller than the eror.
+</p>
+<blockquote>
+<p>Problems where ML significatly surpasses human-level performance</p>
+</blockquote>
+<ul>
+<li>Online Advertising</li>
+<li>Product Recommendations</li>
+<li>Loan Approvals</li>
+<li>Logistics (Deliver time)</li>
+</ul>
+<hr>
+<h2 id="improving-your-model-performance">Improving your model Performance</h2>
+<p>We have two assumptions of supervised learning</p>
+<ol>
+<li>You can fit the training set pretty well</li>
+<li>The training set performance generalizes pretty well to the dev/test set</li>
+</ol>
+<p>How to deal with Bias - Bigger Model, Train longer/Better optimization / NN architecture, hyperparameters</p>
+<p>How to deal with variance - More data, Regularization(l2), data augmentation</p>
 
-            
-            
-                
-                    <a class="tag" href="/tags/cs50_ai">#cs50_ai</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/posts/cs50_ai/2.-uncertainty/">
-                    2. Uncertainty
-                </a>
-            </h2>
-            <div><p> </p></div>
-            <div class="post-footer">
-            <time>August 19, 2020</time>
+        </p>
+    </div>
+    <div id="disqus_thread"></div>
+    <script>
+    
+    
 
-            
-            
-                
-                    <a class="tag" href="/tags/cs50_ai">#cs50_ai</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/posts/cs50_ai/1.-knowledge/">
-                    1. Knowledge
-                </a>
-            </h2>
-            <div><p> </p></div>
-            <div class="post-footer">
-            <time>August 19, 2020</time>
+    
 
-            
-            
-                
-                    <a class="tag" href="/tags/cs50_ai">#cs50_ai</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/posts/cs50_ai/0.-search/">
-                    0. Search
-                </a>
-            </h2>
-            <div><p>Maze -&gt; 길찾기
-Using Stack =&gt; DFS (찾기만!)
-Using Queue =&gt; BFS</p></div>
-            <div class="post-footer">
-            <time>August 17, 2020</time>
-
-            
-            
-                
-                    <a class="tag" href="/tags/cs50_ai">#cs50_ai</a>
-                
-            
-            </div> 
-           
-        </article>
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ds-blog-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+    <div class="page-footer">
         
     </div>
-        
-        <div class="paginator">
-        
-        
-        <p>Page 5 of 7</p>
-        <div class="paginator-group">
-            
-            <a class="color-link" href="/ds_blog/page/4/">
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                            <polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"></polygon>
-                            <polygon id="Path" points="13 4 13 5 1 5 1 4"></polygon>
-                        </g>
-                </svg>  
-                Newer          
-            </a>
-            
-            
-                <a class="color-link older" href="/ds_blog/page/6/">
-                    Older
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                            <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                                <polygon points="7.6707477 1.37628835 8.3292523 0.623711653 12.7592994 4.50000282 8.32918951 8.37629079 7.67069049 7.62370921 11.2407006 4.49999718"></polygon>
-                                <polygon id="Path" points="0 5 0 4 12 4 12 5"></polygon>
-                            </g>
-                    </svg>
-                        
-                </a>
-            
-        </div>
-        
-    </div>
+
 
         
 

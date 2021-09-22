@@ -6,11 +6,7 @@
     <description>Recent content in RBasics_wk4 on DS Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Mar 2020 23:45:08 -0400</lastBuildDate>
-    
-	<atom:link href="https://jinmc.github.io/ds_blog/tags/rbasics_wk4/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 23 Mar 2020 23:45:08 -0400</lastBuildDate><atom:link href="https://jinmc.github.io/ds_blog/tags/rbasics_wk4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basic Programming in R</title>
       <link>https://jinmc.github.io/ds_blog/posts/rbasics/programmingr/</link>
