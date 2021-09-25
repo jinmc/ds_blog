@@ -44,7 +44,7 @@ Fit training set well on Cost function (until human level performance) -> (bigge
 ## Satisficing & Optimizing metrics
 
 <p>
-Let's say Accracy and optimization(speed) both matters.
+Let's say Accuracy and optimization(speed) both matters.
 Satisficing -> at least this much
 Optimizing -> will optimize this as much as possible
 Usually, we have 1 optimizing metric while N-1 satisficing metrics
