@@ -2,7 +2,6 @@
 
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.80.0" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,8 +28,6 @@
     
     
  
-    
-    <link rel="alternate" type="application/rss+xml" href="https://jinmc.github.io/ds_blog/index.xml" title="DS Blog" />
     
     
 
@@ -149,110 +146,172 @@
 </nav>
         <div id="content" class="content-container">
         
-<div class = "article-content">
-        
-        <div class="description">
-            <p>This is a blog from Jim to note and record studying about Data Science</p>
-        </div>
-        
-        
-        
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/posts/structuring_ml_projects/structuring_ml_projects_2/">
-                    Structuring_ml_projects_2
-                </a>
-            </h2>
-            <div><p>Error Analysis Look at dev Examples to evaluate ideas.(ex. cat classifier) Should you try to make your cat classifer do better on dogs?</p></div>
-            <div class="post-footer">
-            <time>September 25, 2021</time>
+<h1 class="post-title">Structuring_ml_projects_2</h1>
+    <time>September 25, 2021</time>
+    <div>
+        <p>
+        <h2 id="error-analysis">Error Analysis</h2>
+<p>Look at dev Examples to evaluate ideas.(ex. cat classifier)
+Should you try to make your cat classifer do better on dogs?</p>
+<p>Error analysis :</p>
+<ul>
+<li>Get 100 mislabeled dev set examples</li>
+<li>Count up how many are dogs</li>
+</ul>
+<hr>
+<h2 id="cleaning-up-incorrectly-labeled-data">Cleaning up incorrectly labeled data</h2>
+<p>Evaluate multiple ideas in parallel(ideas)</p>
+<ul>
+<li>Fix pictures of dogs being recognized as cats</li>
+<li>Fix great cats being misrecognized</li>
+<li>Improve performance on blurry images</li>
+</ul>
+<hr>
+<h2 id="correcting-incorrectly-labeled-data">Correcting incorrectly labeled data</h2>
+<p>Deep Learning algorithms are quite robust to random errors in the training set(But systematic error we should fix!)</p>
+<p>We can also track Incorrectly labeled when doing Error Analysis!</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Case 1</th>
+<th>Case 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall Dev set error</td>
+<td>10%</td>
+<td>2%</td>
+</tr>
+<tr>
+<td>Error due to incorrect labels</td>
+<td>0.6%</td>
+<td>0.6%</td>
+</tr>
+<tr>
+<td>Other causes</td>
+<td>9.4%</td>
+<td>1.4%</td>
+</tr>
+</tbody>
+</table>
+<p>not very important in Case 1, but important in Case 2!</p>
+<hr>
+<h2 id="correcting-incorrect-devtest-set-examples">Correcting incorrect dev/test set examples</h2>
+<ul>
+<li>Apply same process to your dev &amp; test sets to make sure they come from the same distribution</li>
+<li>Consider examining examples your algorithm got right as well as one it got wrong</li>
+<li>Train &amp; dev/test data may now come from slightly different distributions</li>
+</ul>
+<hr>
+<h2 id="build-your-first-system-quickly-then-iterate">Build your first system quickly, then iterate</h2>
+<p>Lots of optimization, error anlysis can be done&hellip;</p>
+<p>people usually overthink rather than underthink!</p>
+<hr>
+<h2 id="mismatched-training-and-devtest-set">Mismatched Training and Dev/test set</h2>
+<p>Training and testing on different distributions</p>
+<p>200k -&gt; data from elsewhere<br>
+10k -&gt; data to target</p>
+<p>We can add everything, divide as train/dev/test, but better way is to use<br>
+10k only in dev/test 2.5k, 2.5k<br>
+put the rest (200k + 5k) in training<br>
+-&gt; reason: If we add everything, we can target the wrong destination!</p>
+<hr>
+<h2 id="bias--variance-with-mismatched-data-distributions">Bias &amp; Variance with Mismatched Data Distributions</h2>
+<p>Let&rsquo;s say human error is almost 0%<br>
+Training error &hellip; 1%<br>
+Dev error &hellip; 10%</p>
+<p>We introduce Training-dev set:<br>
+Same distribution as training set, but not used for training</p>
+<p>Training error &hellip; 1%<br>
+Training-dev error &hellip; 9%<br>
+Dev error : 10%</p>
+<p>We have variance problem</p>
+<p>If we have training error &hellip; 1%<br>
+training-dev error &hellip; 9%<br>
+dev error &hellip; 10%</p>
+<p>then we have data mismatch problem!</p>
+<p>More general Formulation:<br>
+Even dev/test is better than training error, it may be because of data mismatch, and it might be a good thing (We should know all errors of each distribution human level, error on training, training-dev, Dev/test)</p>
+<hr>
+<h2 id="addressing-data-mismatch">Addressing data mismatch</h2>
+<ul>
+<li>Carry out manual error analysis to try to understand difference between training and dev/test sets</li>
+<li>Make training data more similar; or collect more data similar to dev/test sets</li>
+</ul>
+<hr>
+<h2 id="transfer-learning">Transfer Learning</h2>
+<p>Use cat-classifier for X-ray images by changing only the last layers -&gt;<br>
+Initialize the last weights only, and retrain them</p>
+<p>If we have enough data, we can retrain entire layers, or we can retrain last layer only</p>
+<blockquote>
+<p>When can we use transfer learning?</p>
+</blockquote>
+<ul>
+<li>Task A and B has same input</li>
+<li>You hav ea lot more data for Task A than Task B</li>
+<li>Low level features from A could be helpful for learning B</li>
+</ul>
+<hr>
+<h2 id="multi-task-learning">Multi-task Learning</h2>
+<p>Ex) Simplified autonomous driving example (learn several things at once!)</p>
+<p>Unlinke softmax activation, one image can have multiple label</p>
+<blockquote>
+<p>When multi-task learning makes sense</p>
+</blockquote>
+<ul>
+<li>Training on a set of tasks that could benefit from having shared lower-level features</li>
+<li>Usually: Amount of data you have for each task is quite similar</li>
+<li>Can train big enough neural network to do well on all the tasks</li>
+</ul>
+<p>In general, transfer learning is used much more often than multi-task learning. One area multi-task learning is used well is computer vision objected detection.</p>
+<hr>
+<h2 id="what-is-end-to-end-deep-learning">What is End-to-end Deep Learning?</h2>
+<p>(traditional)
+audio -&gt; feature -&gt; Phonemes -&gt; words -&gt; transcript<br>
+(end to end)
+audio -&gt; transcript</p>
+<p>But we need more data! (3000h vs 100,000h)</p>
+<p>Machine Transition
+(traditional) English -&gt; text analysis -&gt; &hellip; -&gt; French
+(end to end) English -&gt; French</p>
+<p>In sum, to do end-to-end deep learning, we need lots of data!</p>
+<hr>
+<h2 id="whether-to-use-end-to-end-deep-learning">Whether to use End-to-End Deep Learning?</h2>
+<p>Pros and Cons of end-to-end deep learning</p>
+<p>Pros: let the data speak
+less hand-desgning of components needed</p>
+<p>Cons: May need large amount of data
+Excludes potentially useful hand-desinged components</p>
+<p>Applying end-to-end deep learning</p>
+<p>Key question : Do you have sufficient data to learn a function of the complexity needed to map x to y?</p>
+<p>Ex) Autonomous driving</p>
+<p>image -&gt; cars/pedestrian -&gt; motion planning -&gt; route -&gt; steering</p>
+<p>This is better than jus having end-to-end right away!</p>
 
-            
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/posts/structuring_ml_projects/structuring_ml_projects/">
-                    Structuring_ml_projects
-                </a>
-            </h2>
-            <div><p>Example methods to imrove your model  Collect more data Collect more diverse training set Train longer Try Adam instead of Gradient Descent Try bigger network Try smaller network Try dropout Add L2 regularization Network Architecture   Orthogonalization Orthogonalization means to tune only one thing to achieve one effect!</p></div>
-            <div class="post-footer">
-            <time>September 22, 2021</time>
+        </p>
+    </div>
+    <div id="disqus_thread"></div>
+    <script>
+    
+    
 
-            
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/posts/ml_andrew_ng/wk11/">
-                    Wk11 - Application Example: Photo OCR
-                </a>
-            </h2>
-            <div><p>  </p></div>
-            <div class="post-footer">
-            <time>October 2, 2020</time>
+    
 
-            
-            
-                
-                    <a class="tag" href="/tags/ml_andrew_ng">#ml_andrew_ng</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/posts/ml_andrew_ng/wk10/">
-                    Wk10 - Learning with Large Datasets
-                </a>
-            </h2>
-            <div><p>  </p></div>
-            <div class="post-footer">
-            <time>October 2, 2020</time>
-
-            
-            
-                
-                    <a class="tag" href="/tags/ml_andrew_ng">#ml_andrew_ng</a>
-                
-            
-            </div> 
-           
-        </article>
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ds-blog-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+    <div class="page-footer">
         
     </div>
-        
-        <div class="paginator">
-        
-        
-        <p>Page 1 of 7</p>
-        <div class="paginator-group">
-            
-            
-                <a class="color-link older" href="/ds_blog/page/2/">
-                    Older
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                            <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                                <polygon points="7.6707477 1.37628835 8.3292523 0.623711653 12.7592994 4.50000282 8.32918951 8.37629079 7.67069049 7.62370921 11.2407006 4.49999718"></polygon>
-                                <polygon id="Path" points="0 5 0 4 12 4 12 5"></polygon>
-                            </g>
-                    </svg>
-                        
-                </a>
-            
-        </div>
-        
-    </div>
+
 
         
 
