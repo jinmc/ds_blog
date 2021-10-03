@@ -2,7 +2,6 @@
 
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.80.0" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,8 +28,6 @@
     
     
  
-    
-    <link rel="alternate" type="application/rss+xml" href="https://jinmc.github.io/ds_blog/index.xml" title="DS Blog" />
     
     
 
@@ -149,128 +146,86 @@
 </nav>
         <div id="content" class="content-container">
         
-<div class = "article-content">
-        
-        <div class="description">
-            <p>This is a blog from Jim to note and record studying about Data Science</p>
-        </div>
-        
-        
-        
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/posts/ml_andrew_ng/wk10/">
-                    Wk10 - Learning with Large Datasets
-                </a>
-            </h2>
-            <div><p>  </p></div>
-            <div class="post-footer">
-            <time>October 2, 2020</time>
+<h1 class="post-title">Model_application</h1>
+    <time>October 3, 2021</time>
+    <div>
+        <p>
+        <h2 id="why-cnn">Why CNN?</h2>
+<p>Inputs can be really big! For example, 1000 x 1000 becomes million.<br>
+To handle this, We introduce convlutions.</p>
+<hr>
+<h2 id="edge-detection-example">Edge Detection example</h2>
+<ul>
+<li>Vertical edge Detection</li>
+</ul>
+<p>example filter</p>
+<p>1  | 0 |  -1<br>
+1  | 0 |  -1<br>
+1  | 0 |  -1</p>
+<p>Other filters such as sobel filer and scharr filter,<br>
+but we can also learn the filter by back propagation!</p>
+<hr>
+<h2 id="padiing">Padiing</h2>
+<p>Why do we using padding?</p>
+<p>If we have 6x6 image and 3x3 filter, the output becomes 4x4.<br>
+It becomes keep getting smaller!</p>
+<p>Also, the pixels in the middle is used much more than pixels in the outer image!</p>
+<ul>
+<li>&ldquo;valid&rdquo; convolution =&gt; no padding</li>
+<li>&ldquo;same&rdquo; convolution =&gt; Pad so that output size is the same as the input size</li>
+</ul>
+<p>equation :
+n + 2p - f + 1 = n</p>
+<p>so, p = (f-1) / 2</p>
+<hr>
+<h2 id="strided-convolutions">Strided Convolutions</h2>
+<p>Skip pixels when doing convolution!<br>
+Default will be stride 1, and we skip 2 pixels will be stride = 2, both horizontal and vertically.</p>
+<p>for example : (1, 1), (1, 3), .. (3, 1), ..</p>
+<hr>
+<h2 id="convolutions-on-rgb-images">Convolutions on RGB images</h2>
+<p>As RGB has 3 channels, and filters also should have same number of channels.</p>
+<p>We can also have several filters, and the number of filters becomes the number of channels.</p>
+<hr>
+<h2 id="number-of-parameters-in-one-layer">Number of parameters in one layer</h2>
+<p>If you have 10 filters that are 3x3x3 in one layer of a neural network, how many parameters does that layer have?</p>
+<p>-&gt; 280 parameters ((3x3x3 + 1) x 10 )</p>
+<hr>
+<h2 id="pooling-layer">Pooling layer</h2>
+<p>Pooling has no parameters to learn! Hyperparameter has Filter size and stride!</p>
+<p>If max-pooling in 3D, max-pooling is done independently on each of the channels.</p>
+<p>There is also average-pooling, but max-pooling is used much more!</p>
+<hr>
+<h2 id="why-convolutions">Why Convolutions?</h2>
+<p>If we roll out every nodes, there are too much nodes!<br>
+But if we use convolution, the parameters reduce significantly!</p>
+<h3 id="parameter-sharing">Parameter Sharing</h3>
+<p>A feature detector (such as vertical edge detector) that&rsquo;s useful in one part of the image is probably useful in another part of the image</p>
+<h3 id="sparsity-of-connections">Sparsity of Connections</h3>
+<p>In each layer, each output value depends only on a value of inputs</p>
 
-            
-            
-                
-                    <a class="tag" href="/tags/ml_andrew_ng">#ml_andrew_ng</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/posts/ml_andrew_ng/wk9_pt2/">
-                    Wk9_part2 - Recommender Systems
-                </a>
-            </h2>
-            <div><p>  </p></div>
-            <div class="post-footer">
-            <time>September 27, 2020</time>
+        </p>
+    </div>
+    <div id="disqus_thread"></div>
+    <script>
+    
+    
 
-            
-            
-                
-                    <a class="tag" href="/tags/ml_andrew_ng">#ml_andrew_ng</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/posts/ml_andrew_ng/wk9_pt1/">
-                    Wk9_part1 - Anomaly Detection
-                </a>
-            </h2>
-            <div><p>  </p></div>
-            <div class="post-footer">
-            <time>September 20, 2020</time>
+    
 
-            
-            
-                
-                    <a class="tag" href="/tags/ml_andrew_ng">#ml_andrew_ng</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://jinmc.github.io/ds_blog/posts/ml_andrew_ng/wk8/">
-                    Wk8 - Unsupervised Learning and Principle Component Analysis
-                </a>
-            </h2>
-            <div><p>  </p></div>
-            <div class="post-footer">
-            <time>September 16, 2020</time>
-
-            
-            
-                
-                    <a class="tag" href="/tags/ml_andrew_ng">#ml_andrew_ng</a>
-                
-            
-            </div> 
-           
-        </article>
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ds-blog-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+    <div class="page-footer">
         
     </div>
-        
-        <div class="paginator">
-        
-        
-        <p>Page 2 of 8</p>
-        <div class="paginator-group">
-            
-            <a class="color-link" href="/ds_blog/">
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                            <polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"></polygon>
-                            <polygon id="Path" points="13 4 13 5 1 5 1 4"></polygon>
-                        </g>
-                </svg>  
-                Newer          
-            </a>
-            
-            
-                <a class="color-link older" href="/ds_blog/page/3/">
-                    Older
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                            <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                                <polygon points="7.6707477 1.37628835 8.3292523 0.623711653 12.7592994 4.50000282 8.32918951 8.37629079 7.67069049 7.62370921 11.2407006 4.49999718"></polygon>
-                                <polygon id="Path" points="0 5 0 4 12 4 12 5"></polygon>
-                            </g>
-                    </svg>
-                        
-                </a>
-            
-        </div>
-        
-    </div>
+
 
         
 
