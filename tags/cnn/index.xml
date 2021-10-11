@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cnn on DS Blog</title>
+    <link>https://jinmc.github.io/ds_blog/tags/cnn/</link>
+    <description>Recent content in cnn on DS Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Oct 2021 19:35:51 +0900</lastBuildDate><atom:link href="https://jinmc.github.io/ds_blog/tags/cnn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CNN - Case studies</title>
+      <link>https://jinmc.github.io/ds_blog/posts/cnn/case_studies/</link>
+      <pubDate>Thu, 07 Oct 2021 19:35:51 +0900</pubDate>
+      
+      <guid>https://jinmc.github.io/ds_blog/posts/cnn/case_studies/</guid>
+      <description>Why look at case studies? It is the quickest, easiest way to gain intuition, by writing and read other&amp;rsquo;s code and architecture.</description>
+    </item>
+    
+    <item>
+      <title>Model_application</title>
+      <link>https://jinmc.github.io/ds_blog/posts/cnn/model_application/</link>
+      <pubDate>Sun, 03 Oct 2021 19:01:36 +0900</pubDate>
+      
+      <guid>https://jinmc.github.io/ds_blog/posts/cnn/model_application/</guid>
+      <description>Why CNN? Inputs can be really big! For example, 1000 x 1000 becomes million.</description>
+    </item>
+    
+  </channel>
+</rss>
