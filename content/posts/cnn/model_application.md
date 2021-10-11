@@ -2,6 +2,7 @@
 title: "Model_application"
 date: 2021-10-03T19:01:36+09:00
 draft: false
+tags: ["cnn"]
 ---
 
 ## Why CNN?
