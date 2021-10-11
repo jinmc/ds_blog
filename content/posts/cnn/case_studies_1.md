@@ -1,5 +1,5 @@
 ---
-title: "CNN - Case studies"
+title: "CNN - Case studies (1)"
 date: 2021-10-07T19:35:51+09:00
 draft: false
 tags: ["cnn"]
