@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>DS Blog</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/ds_blog/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ds_blog/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ds_blog/favicon-16x16.png">
+    <link rel="manifest" href="/ds_blog/manifest.json">
+    <link rel="mask-icon" href="/ds_blog/safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="https://jinmc.github.io/ds_blog/css/main.min.03322cbe6bddfc28e7b17b84bc5446282a510b14b57be3371ba1f68ef1ab9ce8.css"/>
+
+    
+    
+    
+
+    
+    
+ 
+    
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123967699-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123967699-4');
+</script>
+</head>
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        <a href="/ds_blog/">DS Blog</a>
+    </div>  
+</header>
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="/ds_blog/motivation/">Motivation</a>
+  
+    <a class="color-link nav-link" href="/ds_blog/tags/">Tags</a>
+  
+    <a class="color-link nav-link" href="/ds_blog/archives/">Archives</a>
+  
+  <a class="color-link nav-link" href="https://jinmc.github.io/ds_blog/index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
+</div>
+<footer class="footer">
+	<div class="social-icons">
+        
+    <a class="social-icon" href="mailto:jinmochong@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://www.facebook.com/profile.php?id=100006651933516" target="_blank" rel="noopener" title="Facebook">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M27,14.0789648 C27,6.89925781 21.179707,1.07896484 14,1.07896484 C6.82029297,1.07896484 1,6.89925781 1,14.0789648 C1,20.5676406 5.75391211,25.9457813 11.96875,26.9210352 L11.96875,17.8367773 L8.66796875,17.8367773 L8.66796875,14.0789648 L11.96875,14.0789648 L11.96875,11.2149023 C11.96875,7.95677734 13.9095586,6.15708984 16.879043,6.15708984 C18.3013496,6.15708984 19.7890625,6.41099609 19.7890625,6.41099609 L19.7890625,9.61021484 L18.149793,9.61021484 C16.534873,9.61021484 16.03125,10.6123066 16.03125,11.640373 L16.03125,14.0789648 L19.6367188,14.0789648 L19.0603516,17.8367773 L16.03125,17.8367773 L16.03125,26.9210352 C22.2460879,25.9457813 27,20.5676406 27,14.0789648"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <a class="social-icon" href="https://www.linkedin.com/in/jim-chong-8b8059b2/" target="_blank" rel="noopener" title="LinkedIn">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M2,3.654102 C2,2.69908141 2.79442509,1.92397846 3.77383592,1.92397846 L24.2261641,1.92397846 C25.2058917,1.92397846 26,2.69908141 26,3.654102 L26,24.3462148 C26,25.3015521 25.2058917,26.0760215 24.2261641,26.0760215 L3.77383592,26.0760215 C2.79442509,26.0760215 2,25.3015521 2,24.3465315 L2,3.65378524 L2,3.654102 Z M9.27526132,22.1415901 L9.27526132,11.2356668 L5.65030092,11.2356668 L5.65030092,22.1415901 L9.27557808,22.1415901 L9.27526132,22.1415901 Z M7.46341463,9.74691162 C8.72727273,9.74691162 9.51409566,8.90940767 9.51409566,7.86284447 C9.49033893,6.79252455 8.72727273,5.97846056 7.48748812,5.97846056 C6.24675325,5.97846056 5.43649034,6.79252455 5.43649034,7.86284447 C5.43649034,8.90940767 6.22299652,9.74691162 7.4396579,9.74691162 L7.46309788,9.74691162 L7.46341463,9.74691162 Z M11.2815965,22.1415901 L14.9062401,22.1415901 L14.9062401,16.0519481 C14.9062401,15.7263225 14.9299968,15.4000634 15.0256573,15.1675641 C15.2876148,14.5159962 15.8840672,13.8416218 16.8856509,13.8416218 C18.1970225,13.8416218 18.7218879,14.8416218 18.7218879,16.3078872 L18.7218879,22.1415901 L22.3465315,22.1415901 L22.3465315,15.8885017 C22.3465315,12.5388027 20.5584416,10.9800443 18.1735825,10.9800443 C16.2182452,10.9800443 15.3595185,12.072854 14.8824834,12.8172315 L14.9065569,12.8172315 L14.9065569,11.2359835 L11.2819132,11.2359835 C11.3291099,12.2591067 11.2815965,22.1419069 11.2815965,22.1419069 L11.2815965,22.1415901 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+    <a class="social-icon" href="http://jinmochong.com" target="_blank" rel="noopener" title="WordPress">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M23.8616583,8.6080289 C24.7389027,10.2086825 25.2381067,12.0455783 25.2381067,13.999537 C25.2381067,18.1456809 22.9911599,21.7655045 19.6500386,23.7135109 L23.0825616,13.7889561 C23.723696,12.185657 23.9371871,10.9036526 23.9371871,9.7637111 C23.9371871,9.3499565 23.9099385,8.96596366 23.8616583,8.6080289 L23.8616583,8.6080289 Z M15.5487358,8.7303828 C16.2253199,8.69480096 16.834973,8.62363729 16.834973,8.62363729 C17.4405256,8.55194452 17.3690974,7.66200176 16.7632802,7.69745132 C16.7632802,7.69745132 14.9429187,7.84030777 13.7677921,7.84030777 C12.6635647,7.84030777 10.8080182,7.69745132 10.8080182,7.69745132 C10.2019365,7.66200176 10.1309051,8.5877909 10.7367222,8.62363729 C10.7367222,8.62363729 11.3099999,8.69480096 11.9155525,8.7303828 L13.6663376,13.5278462 L11.2065612,20.9038685 L7.1142531,8.7303828 C7.79136621,8.69480096 8.40035795,8.62363729 8.40035795,8.62363729 C9.00551374,8.55194452 8.93408551,7.66200176 8.32853291,7.69745132 C8.32853291,7.69745132 6.50856822,7.84030777 5.33330939,7.84030777 C5.12246386,7.84030777 4.8739201,7.83514906 4.61003249,7.8266835 C6.61954652,4.7759047 10.073498,2.76123197 13.9999339,2.76123197 C16.925581,2.76123197 19.5895892,3.87987732 21.5889181,5.71187898 C21.5405056,5.70896894 21.4932836,5.70288431 21.4434161,5.70288431 C20.3394533,5.70288431 19.5561237,6.66451984 19.5561237,7.69745132 C19.5561237,8.62363729 20.0905127,9.40723136 20.6600866,10.333285 C21.0874655,11.0818264 21.5866694,12.0433296 21.5866694,13.4327409 C21.5866694,14.3945087 21.2166977,15.5107731 20.7315148,17.065792 L19.610224,20.8111441 L15.5487358,8.7303828 Z M13.9999339,25.238768 C12.8967646,25.238768 11.8320873,25.0769963 10.8249493,24.7808338 L14.1972874,14.982601 L17.6515034,24.4467084 C17.6742546,24.5022637 17.7021645,24.5534539 17.7319263,24.6016018 C16.5638103,25.0128432 15.3086576,25.238768 13.9999339,25.238768 L13.9999339,25.238768 Z M2.76162879,13.999537 C2.76162879,12.3701799 3.11109799,10.8234943 3.7347722,9.42588206 L9.09572494,24.1139058 C5.34640457,22.2924861 2.76162879,18.4479281 2.76162879,13.999537 L2.76162879,13.999537 Z M13.9999339,1.49999473 C7.1075071,1.49999473 1.500127,7.10724256 1.500127,13.999537 C1.500127,20.8920961 7.1075071,26.5000053 13.9999339,26.5000053 C20.8922283,26.5000053 26.499873,20.8920961 26.499873,13.999537 C26.499873,7.10724256 20.8922283,1.49999473 13.9999339,1.49999473 L13.9999339,1.49999473 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+    <a class="social-icon" href="https://github.com/jinmc" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	<p><a href="https://github.com/kimcc/hugo-theme-noteworthy" target="_blank" rel="noopener">Noteworthy theme</a></p>
+	<p><a href="https://gohugo.io" target="_blank" rel="noopener">Built with Hugo</a></p>
+
+	<script src="https://jinmc.github.io/ds_blog/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+</nav>
+        <div id="content" class="content-container">
+        
+<h1 class="post-title">GCP Data Engineer preparation - Questionset2 (Official sample questions)</h1>
+    <time>April 20, 2022</time>
+    <div>
+        <p>
+        <ol>
+<li>You are building storage for files for a data pipeline on Google Cloud. You want to support JSON files. The schema of these files will occasionally change. Your analyst teams will use running aggregate ANSI SQL queries on this data. What should you do?</li>
+</ol>
+<h4 id="a-use-bigquery-for-storage-provide-format-files-for-data-load-update-the-format-files-as-needed">A. Use BigQuery for storage. Provide format files for data load. Update the format files as needed.</h4>
+<h4 id="b-use-bigquery-for-storage-select-automatically-detect-in-the-schema-section">B. Use BigQuery for storage. Select &ldquo;Automatically detect&rdquo; in the Schema section.</h4>
+<h4 id="c-use-cloud-storage-for-storage-link-data-as-temporary-tables-in-bigquery-and-turn-on-the-automatically-detect-option-in-the-schema-section-of-bigquery">C. Use Cloud Storage for storage. Link data as temporary tables in BigQuery and turn on the &ldquo;Automatically detect&rdquo; option in the Schema section of BigQuery.</h4>
+<h4 id="d-use-cloud-storage-for-storage-link-data-as-permanent-tables-in-bigquery-and-turn-on-the-automatically-detect-option-in-the-schema-section-of-bigquery">D. Use Cloud Storage for storage. Link data as permanent tables in BigQuery and turn on the &ldquo;Automatically detect&rdquo; option in the Schema section of BigQuery.</h4>
+<ol start="2">
+<li>You use a Hadoop cluster both for serving analytics and for processing and transforming data. The data is currently stored on HDFS in Parquet format. The data processing jobs run for 6 hours each night. Analytics users can access the system 24 hours a day. Phase 1 is to quickly migrate the entire Hadoop environment without a major re-architecture. Phase 2 will include migrating to BigQuery for analytics and to Dataflow for data processing. You want to make the future migration to BigQuery and Dataflow easier by following Google-recommended practices and managed services. What should you do?</li>
+</ol>
+<h4 id="a-lift-and-shift-hadoophdfs-to-dataproc">A. Lift and shift Hadoop/HDFS to Dataproc.</h4>
+<h4 id="b-lift-and-shift-hadoophdfs-to-compute-engine">B. Lift and shift Hadoop/HDFS to Compute Engine.</h4>
+<h4 id="c-create-a-single-dataproc-cluster-to-support-both-analytics-and-data-processing-and-point-it-at-a-cloud-storage-bucket-that-contains-the-parquet-files-that-were-previously-stored-on-hdfs">C. Create a single Dataproc cluster to support both analytics and data processing, and point it at a Cloud Storage bucket that contains the Parquet files that were previously stored on HDFS.</h4>
+<h4 id="d-create-separate-dataproc-clusters-to-support-analytics-and-data-processing-and-point-both-at-the-same-cloud-storage-bucket-that-contains-the-parquet-files-that-were-previously-stored-on-hdfs">D. Create separate Dataproc clusters to support analytics and data processing, and point both at the same Cloud Storage bucket that contains the Parquet files that were previously stored on HDFS.</h4>
+<ol start="3">
+<li>You are building a new real-time data warehouse for your company and will use BigQuery streaming inserts. There is no guarantee that data will only be sent in once but you do have a unique ID for each row of data and an event timestamp. You want to ensure that duplicates are not included while interactively querying data. Which query type should you use?</li>
+</ol>
+<h4 id="a-include-order-by-desc-on-timestamp-column-and-limit-to-1">A. Include ORDER BY DESC on timestamp column and LIMIT to 1.</h4>
+<h4 id="b-use-group-by-on-the-unique-id-column-and-timestamp-column-and-sum-on-the-values">B. Use GROUP BY on the unique ID column and timestamp column and SUM on the values.</h4>
+<h4 id="c-use-the-lag-window-function-with-partition-by-unique-id-along-with-where-lag-is-not-null">C. Use the LAG window function with PARTITION by unique ID along with WHERE LAG IS NOT NULL.</h4>
+<h4 id="d-use-the-row_number-window-function-with-partition-by-unique-id-along-with-where-row-equals-1">D. Use the ROW_NUMBER window function with PARTITION by unique ID along with WHERE row equals 1.</h4>
+<ol start="4">
+<li>You are designing a streaming pipeline for ingesting player interaction data for a mobile game. You want the pipeline to handle out-of-order data delayed up to 15 minutes on a per-player basis and exponential growth in global users. What should you do?</li>
+</ol>
+<h4 id="a-design-a-dataflow-streaming-pipeline-with-session-windowing-and-a-minimum-gap-duration-of-15-minutes-use-individual-player-as-the-key-use-pubsub-as-a-message-bus-for-ingestion">A. Design a Dataflow streaming pipeline with session windowing and a minimum gap duration of 15 minutes. Use &ldquo;individual player&rdquo; as the key. Use Pub/Sub as a message bus for ingestion.</h4>
+<h4 id="b-design-a-dataflow-streaming-pipeline-with-session-windowing-and-a-minimum-gap-duration-of-15-minutes-use-individual-player-as-the-key-use-apache-kafka-as-a-message-bus-for-ingestion">B. Design a Dataflow streaming pipeline with session windowing and a minimum gap duration of 15 minutes. Use &ldquo;individual player&rdquo; as the key. Use Apache Kafka as a message bus for ingestion.</h4>
+<h4 id="c-design-a-dataflow-streaming-pipeline-with-a-single-global-window-of-15-minutes-use-pubsub-as-a-message-bus-for-ingestion">C. Design a Dataflow streaming pipeline with a single global window of 15 minutes. Use Pub/Sub as a message bus for ingestion.</h4>
+<h4 id="d-design-a-dataflow-streaming-pipeline-with-a-single-global-window-of-15-minutes-use-apache-kafka-as-a-message-bus-for-ingestion">D. Design a Dataflow streaming pipeline with a single global window of 15 minutes. Use Apache Kafka as a message bus for ingestion.</h4>
+<ol start="5">
+<li>Your company is loading CSV files into BigQuery. The data is fully imported successfully; however, the imported data is not matching byte-to-byte to the source file. What is the most likely cause of this problem?</li>
+</ol>
+<h4 id="a-the-csv-data-loaded-in-bigquery-is-not-flagged-as-csv">A. The CSV data loaded in BigQuery is not flagged as CSV.</h4>
+<h4 id="b-the-csv-data-had-invalid-rows-that-were-skipped-on-import">B. The CSV data had invalid rows that were skipped on import.</h4>
+<h4 id="c-the-csv-data-loaded-in-bigquery-is-not-using-bigquerys-default-encoding">C. The CSV data loaded in BigQuery is not using BigQuery’s default encoding.</h4>
+<h4 id="d-the-csv-data-has-not-gone-through-an-etl-phase-before-loading-into-bigquery">D. The CSV data has not gone through an ETL phase before loading into BigQuery.</h4>
+<ol start="6">
+<li>Your company is migrating their 30-node Apache Hadoop cluster to the cloud. They want to re-use Hadoop jobs they have already created and minimize the management of the cluster as much as possible. They also want to be able to persist data beyond the life of the cluster. What should you do?</li>
+</ol>
+<h4 id="a-create-a-dataflow-job-to-process-the-data">A. Create a Dataflow job to process the data.</h4>
+<h4 id="b-create-a-dataproc-cluster-that-uses-persistent-disks-for-hdfs">B. Create a Dataproc cluster that uses persistent disks for HDFS.</h4>
+<h4 id="c-create-a-hadoop-cluster-on-compute-engine-that-uses-persistent-disks">C. Create a Hadoop cluster on Compute Engine that uses persistent disks.</h4>
+<h4 id="d-create-a-dataproc-cluster-that-uses-the-cloud-storage-connector">D. Create a Dataproc cluster that uses the Cloud Storage connector.</h4>
+<h4 id="e-create-a-hadoop-cluster-on-compute-engine-that-uses-local-ssd-disks">E. Create a Hadoop cluster on Compute Engine that uses Local SSD disks.</h4>
+<ol start="7">
+<li>You have 250,000 devices which produce a JSON device status event every 10 seconds. You want to capture this event data for outlier time series analysis. What should you do?</li>
+</ol>
+<h4 id="a-ship-the-data-into-bigquery-develop-a-custom-application-that-uses-the-bigquery-api-to-query-the-dataset-and-displays-device-outlier-data-based-on-your-business-requirements">A. Ship the data into BigQuery. Develop a custom application that uses the BigQuery API to query the dataset and displays device outlier data based on your business requirements.</h4>
+<h4 id="b-ship-the-data-into-bigquery-use-the-bigquery-console-to-query-the-dataset-and-display-device-outlier-data-based-on-your-business-requirements">B. Ship the data into BigQuery. Use the BigQuery console to query the dataset and display device outlier data based on your business requirements.</h4>
+<h4 id="c-ship-the-data-into-cloud-bigtable-use-the-cloud-bigtable-cbt-tool-to-display-device-outlier-data-based-on-your-business-requirements">C. Ship the data into Cloud Bigtable. Use the Cloud Bigtable cbt tool to display device outlier data based on your business requirements.</h4>
+<h4 id="d-ship-the-data-into-cloud-bigtable-install-and-use-the-hbase-shell-for-cloud-bigtable-to-query-the-table-for-device-outlier-data-based-on-your-business-requirements">D. Ship the data into Cloud Bigtable. Install and use the HBase shell for Cloud Bigtable to query the table for device outlier data based on your business requirements.</h4>
+<ol start="8">
+<li>You are selecting a messaging service for log messages that must include final result message ordering as part of building a data pipeline on Google Cloud. You want to stream input for 5 days and be able to query the current status. You will be storing the data in a searchable repository. How should you set up the input messages?</li>
+</ol>
+<h4 id="a-use-pubsub-for-input-attach-a-timestamp-to-every-message-in-the-publisher">A. Use Pub/Sub for input. Attach a timestamp to every message in the publisher.</h4>
+<h4 id="b-use-pubsub-for-input-attach-a-unique-identifier-to-every-message-in-the-publisher">B. Use Pub/Sub for input. Attach a unique identifier to every message in the publisher.</h4>
+<h4 id="c-use-apache-kafka-on-compute-engine-for-input-attach-a-timestamp-to-every-message-in-the-publisher">C. Use Apache Kafka on Compute Engine for input. Attach a timestamp to every message in the publisher.</h4>
+<h4 id="d-use-apache-kafka-on-compute-engine-for-input-attach-a-unique-identifier-to-every-message-in-the-publisher">D. Use Apache Kafka on Compute Engine for input. Attach a unique identifier to every message in the publisher.</h4>
+<ol start="9">
+<li>You want to publish system metrics to Google Cloud from a large number of on-prem hypervisors and VMs for analysis and creation of dashboards. You have an existing custom monitoring agent deployed to all the hypervisors and your on-prem metrics system is unable to handle the load. You want to design a system that can collect and store metrics at scale. You don&rsquo;t want to manage your own time series database. Metrics from all agents should be written to the same table but agents must not have permission to modify or read data written by other agents. What should you do?</li>
+</ol>
+<h4 id="a-modify-the-monitoring-agent-to-publish-protobuf-messages-to-pubsub-use-a-dataproc-cluster-or-dataflow-job-to-consume-messages-from-pubsub-and-write-to-bigtable">A. Modify the monitoring agent to publish protobuf messages to Pub/Sub. Use a Dataproc cluster or Dataflow job to consume messages from Pub/Sub and write to BigTable.</h4>
+<h4 id="b-modify-the-monitoring-agent-to-write-protobuf-messages-directly-to-bigtable">B. Modify the monitoring agent to write protobuf messages directly to BigTable.</h4>
+<h4 id="c-modify-the-monitoring-agent-to-write-protobuf-messages-to-hbase-deployed-on-compute-engine-vm-instances">C. Modify the monitoring agent to write protobuf messages to HBase deployed on Compute Engine VM Instances</h4>
+<h4 id="d-modify-the-monitoring-agent-to-write-protobuf-messages-to-pubsub-use-a-dataproc-cluster-or-dataflow-job-to-consume-messages-from-pubsub-and-write-to-cassandra-deployed-on-compute-engine-vm-instances">D. Modify the monitoring agent to write protobuf messages to Pub/Sub. Use a Dataproc cluster or Dataflow job to consume messages from Pub/Sub and write to Cassandra deployed on Compute Engine VM Instances.</h4>
+<ol start="10">
+<li>You are designing storage for CSV files and using an I/O-intensive custom Apache Spark transform as part of deploying a data pipeline on Google Cloud. You intend to use ANSI SQL to run queries for your analysts. How should you transform the input data?</li>
+</ol>
+<h4 id="a-use-bigquery-for-storage-use-dataflow-to-run-the-transformations">A. Use BigQuery for storage. Use Dataflow to run the transformations.</h4>
+<h4 id="b-use-bigquery-for-storage-use-dataproc-to-run-the-transformations">B. Use BigQuery for storage. Use Dataproc to run the transformations.</h4>
+<h4 id="c-use-cloud-storage-for-storage-use-dataflow-to-run-the-transformations">C. Use Cloud Storage for storage. Use Dataflow to run the transformations.</h4>
+<h4 id="d-use-cloud-storage-for-storage-use-dataproc-to-run-the-transformations">D. Use Cloud Storage for storage. Use Dataproc to run the transformations.</h4>
+<ol start="11">
+<li>You are designing a relational data repository on Google Cloud to grow as needed. The data will be transactionally consistent and added from any location in the world. You want to monitor and adjust node count for input traffic, which can spike unpredictably. What should you do?</li>
+</ol>
+<h4 id="a-use-cloud-spanner-for-storage-monitor-storage-usage-and-increase-node-count-if-more-than-70-utilized">A. Use Cloud Spanner for storage. Monitor storage usage and increase node count if more than 70% utilized.</h4>
+<h4 id="b-use-cloud-spanner-for-storage-monitor-cpu-utilization-and-increase-node-count-if-more-than-70-utilized-for-your-time-span">B. Use Cloud Spanner for storage. Monitor CPU utilization and increase node count if more than 70% utilized for your time span.</h4>
+<h4 id="c-use-cloud-bigtable-for-storage-monitor-data-stored-and-increase-node-count-if-more-than-70-utilized">C. Use Cloud Bigtable for storage. Monitor data stored and increase node count if more than 70% utilized.</h4>
+<h4 id="d-use-cloud-bigtable-for-storage-monitor-cpu-utilization-and-increase-node-count-if-more-than-70-utilized-for-your-time-span">D. Use Cloud Bigtable for storage. Monitor CPU utilization and increase node count if more than 70% utilized for your time span.</h4>
+<ol start="12">
+<li>You have a Spark application that writes data to Cloud Storage in Parquet format. You scheduled the application to run daily using DataProcSparkOperator and Apache Airflow DAG by Cloud Composer. You want to add tasks to the DAG to make the data available to BigQuery users. You want to maximize query speed and configure partitioning and clustering on the table. What should you do?</li>
+</ol>
+<h4 id="a-use-bashoperator-to-call-bq-insert">A. Use &ldquo;BashOperator&rdquo; to call &ldquo;bq insert&rdquo;.</h4>
+<h4 id="b-use-bashoperator-to-call-bq-cp-with-the---append-flag">B. Use &ldquo;BashOperator&rdquo; to call &ldquo;bq cp&rdquo; with the &ldquo;&ndash;append&rdquo; flag.</h4>
+<h4 id="c-use-googlecloudstoragetobigqueryoperator-with-schema_object-pointing-to-a-schema-json-in-cloud-storage-and-source_format-set-to-parquet">C. Use &ldquo;GoogleCloudStorageToBigQueryOperator&rdquo; with &ldquo;schema_object&rdquo; pointing to a schema JSON in Cloud Storage and &ldquo;source_format&rdquo; set to &ldquo;PARQUET&rdquo;.</h4>
+<h4 id="d-use-bigquerycreateexternaltableoperator-with-schema_object-pointing-to-a-schema-json-in-cloud-storage-and-source_format-set-to-parquet">D. Use &ldquo;BigQueryCreateExternalTableOperator&rdquo; with &ldquo;schema_object&rdquo; pointing to a schema JSON in Cloud Storage and &ldquo;source_format&rdquo; set to &ldquo;PARQUET&rdquo;.</h4>
+<ol start="13">
+<li>You have a website that tracks page visits for each user and then creates a Pub/Sub message with the session ID and URL of the page. You want to create a Dataflow pipeline that sums the total number of pages visited by each user and writes the result to BigQuery. User sessions timeout after 30 minutes. Which type of Dataflow window should you choose?</li>
+</ol>
+<h4 id="a-a-single-global-window">A. A single global window</h4>
+<h4 id="b-fixed-time-windows-with-a-duration-of-30-minutes">B. Fixed-time windows with a duration of 30 minutes</h4>
+<h4 id="c-session-based-windows-with-a-gap-duration-of-30-minutes">C. Session-based windows with a gap duration of 30 minutes</h4>
+<h4 id="d-sliding-time-windows-with-a-duration-of-30-minutes-and-a-new-window-every-5-minute">D. Sliding-time windows with a duration of 30 minutes and a new window every 5 minute</h4>
+<ol start="14">
+<li>You are designing a basket abandonment system for an ecommerce company. The system will send a message to a user based on these rules: a). No interaction by the user on the site for 1 hour b). Has added more than $30 worth of products to the basket c). Has not completed a transaction. You use Dataflow to process the data and decide if a message should be sent. How should you design the pipeline?</li>
+</ol>
+<h4 id="a-use-a-fixed-time-window-with-a-duration-of-60-minutes">A. Use a fixed-time window with a duration of 60 minutes.</h4>
+<h4 id="b-use-a-sliding-time-window-with-a-duration-of-60-minutes">B. Use a sliding time window with a duration of 60 minutes.</h4>
+<h4 id="c-use-a-session-window-with-a-gap-time-duration-of-60-minutes">C. Use a session window with a gap time duration of 60 minutes.</h4>
+<h4 id="d-use-a-global-window-with-a-time-based-trigger-with-a-delay-of-60-minutes">D. Use a global window with a time based trigger with a delay of 60 minutes.</h4>
+<ol start="15">
+<li>You need to stream time-series data in Avro format, and then write this to both BigQuery and Cloud Bigtable simultaneously using Dataflow. You want to achieve minimal end-to-end latency. Your business requirements state this needs to be completed as quickly as possible. What should you do?</li>
+</ol>
+<h4 id="a-create-a-pipeline-and-use-pardo-transform">A. Create a pipeline and use ParDo transform.</h4>
+<h4 id="b-create-a-pipeline-that-groups-the-data-into-a-pcollection-and-uses-the-combine-transform">B. Create a pipeline that groups the data into a PCollection and uses the Combine transform.</h4>
+<h4 id="c-create-a-pipeline-that-groups-data-using-a-pcollection-and-then-uses-bigtable-and-bigqueryio-transforms">C. Create a pipeline that groups data using a PCollection and then uses Bigtable and BigQueryIO transforms.</h4>
+<h4 id="d-create-a-pipeline-that-groups-data-using-a-pcollection-and-then-use-avro-io-transform-to-write-to-cloud-storage-after-the-data-is-written-load-the-data-from-cloud-storage-into-bigquery-and-bigtable">D. Create a pipeline that groups data using a PCollection, and then use Avro I/O transform to write to Cloud Storage. After the data is written, load the data from Cloud Storage into BigQuery and Bigtable.</h4>
+<ol start="16">
+<li>Your company’s on-premises Apache Hadoop servers are approaching end-of-life, and IT has decided to migrate the cluster to Dataproc. A like-for-like migration of the cluster would require 50 TB of Google Persistent Disk per node. The CIO is concerned about the cost of using that much block storage. You want to minimize the storage cost of the migration. What should you do?</li>
+</ol>
+<h4 id="a-put-the-data-into-cloud-storage">A. Put the data into Cloud Storage.</h4>
+<h4 id="b-use-preemptible-virtual-machines-vms-for-the-dataproc-cluster">B. Use preemptible virtual machines (VMs) for the Dataproc cluster.</h4>
+<h4 id="c-tune-the-dataproc-cluster-so-that-there-is-just-enough-disk-for-all-data">C. Tune the Dataproc cluster so that there is just enough disk for all data.</h4>
+<h4 id="d-migrate-some-of-the-cold-data-into-cloud-storage-and-keep-only-the-hot-data-in-persistent-disk">D. Migrate some of the cold data into Cloud Storage, and keep only the hot data in Persistent Disk.</h4>
+<ol start="17">
+<li>You are designing storage for two relational tables that are part of a 10-TB database on Google Cloud. You want to support transactions that scale horizontally. You also want to optimize data for range queries on non-key columns. What should you do?</li>
+</ol>
+<h4 id="a-use-cloud-sql-for-storage-add-secondary-indexes-to-support-query-patterns">A. Use Cloud SQL for storage. Add secondary indexes to support query patterns.</h4>
+<h4 id="b-use-cloud-sql-for-storage-use-dataflow-to-transform-data-to-support-query-patterns">B. Use Cloud SQL for storage. Use Dataflow to transform data to support query patterns.</h4>
+<h4 id="c-use-cloud-spanner-for-storage-add-secondary-indexes-to-support-query-patterns">C. Use Cloud Spanner for storage. Add secondary indexes to support query patterns.</h4>
+<h4 id="d-use-cloud-spanner-for-storage-use-dataflow-to-transform-data-to-support-query-patterns">D. Use Cloud Spanner for storage. Use Dataflow to transform data to support query patterns.</h4>
+<ol start="18">
+<li>Your company is streaming real-time sensor data from their factory floor into Bigtable and they have noticed extremely poor performance. How should the row key be redesigned to improve Bigtable performance on queries that populate real-time dashboards?</li>
+</ol>
+<h4 id="a-use-a-row-key-of-the-form-timestamp">A. Use a row key of the form <timestamp>.</h4>
+<h4 id="b-use-a-row-key-of-the-form-sensorid">B. Use a row key of the form <sensorid>.</h4>
+<h4 id="c-use-a-row-key-of-the-form-timestampsensorid">C. Use a row key of the form <timestamp>#<sensorid>.</h4>
+<h4 id="d-use-a-row-key-of-the-form-sensoridtimestamp">D. Use a row key of the form <sensorid>#<timestamp>.</h4>
+<ol start="19">
+<li>You are developing an application on Google Cloud that will automatically generate subject labels for users’ blog posts. You are under competitive pressure to add this feature quickly, and you have no additional developer resources. No one on your team has experience with machine learning. What should you do?</li>
+</ol>
+<h4 id="a-call-the-cloud-natural-language-api-from-your-application-process-the-generated-entity-analysis-as-labels">A. Call the Cloud Natural Language API from your application. Process the generated Entity Analysis as labels.</h4>
+<h4 id="b-call-the-cloud-natural-language-api-from-your-application-process-the-generated-sentiment-analysis-as-labels">B. Call the Cloud Natural Language API from your application. Process the generated Sentiment Analysis as labels.</h4>
+<h4 id="c-build-and-train-a-text-classification-model-using-tensorflow-deploy-the-model-using-ai-platform-prediction-call-the-model-from-your-application-and-process-the-results-as-labels">C. Build and train a text classification model using TensorFlow. Deploy the model using AI Platform Prediction. Call the model from your application and process the results as labels.</h4>
+<h4 id="d-build-and-train-a-text-classification-model-using-tensorflow-deploy-the-model-using-a-kubernetes-engine-cluster-call-the-model-from-your-application-and-process-the-results-as-labels">D. Build and train a text classification model using TensorFlow. Deploy the model using a Kubernetes Engine cluster. Call the model from your application and process the results as labels.</h4>
+<ol start="20">
+<li>Your company is using WILDCARD tables to query data across multiple tables with similar names. The SQL statement is currently failing with the error shown below. Which table name will make the SQL statement work correctly?</li>
+</ol>
+<p>SELECT age
+FROM
+bigquery-public-data.noaa_gsod.gsod
+WHERE
+age != 99
+AND _TABLE_SUFFIX = &lsquo;1929&rsquo;
+ORDER BY
+age DESC</p>
+<h4 id="a-bigquery-public-datanoaa_gsodgsod">A. <code>bigquery-public-data.noaa_gsod.gsod</code></h4>
+<h4 id="b-bigquery-public-datanoaa_gsodgsod">B. bigquery-public-data.noaa_gsod.gsod*</h4>
+<h4 id="c-bigquery-public-datanoaa_gsodgsod">C. ‘bigquery-public-data.noaa_gsod.gsod*’</h4>
+<h4 id="d-bigquery-public-datanoaa_gsodgsod">D. <code>bigquery-public-data.noaa_gsod.gsod*</code></h4>
+<ol start="21">
+<li>You are working on an ML-based application that will transcribe conversations between manufacturing workers. These conversations are in English and between 30-40 sec long. Conversation recordings come from old enterprise radio sets that have a low sampling rate of 8000 Hz, but you have a large dataset of these recorded conversations with their transcriptions. You want to follow Google-recommended practices. How should you proceed with building your application?</li>
+</ol>
+<h4 id="a-use-cloud-speech-to-text-api-and-send-requests-in-a-synchronous-mode">A. Use Cloud Speech-to-Text API, and send requests in a synchronous mode.</h4>
+<h4 id="b-use-cloud-speech-to-text-api-and-send-requests-in-an-asynchronous-mode">B. Use Cloud Speech-to-Text API, and send requests in an asynchronous mode.</h4>
+<h4 id="c-use-cloud-speech-to-text-api-but-resample-your-captured-recordings-to-a-rate-of-16000-hz">C. Use Cloud Speech-to-Text API, but resample your captured recordings to a rate of 16000 Hz.</h4>
+<h4 id="d-train-your-own-speech-recognition-model-because-you-have-an-uncommon-use-case-and-you-have-a-labeled-dataset">D. Train your own speech recognition model because you have an uncommon use case and you have a labeled dataset.</h4>
+<ol start="22">
+<li>You are developing an application on Google Cloud that will label famous landmarks in users’ photos. You are under competitive pressure to develop a predictive model quickly. You need to keep service costs low. What should you do?</li>
+</ol>
+<h4 id="a-build-an-application-that-calls-the-cloud-vision-api-inspect-the-generated-mid-values-to-supply-the-image-labels">A. Build an application that calls the Cloud Vision API. Inspect the generated MID values to supply the image labels.</h4>
+<h4 id="b-build-an-application-that-calls-the-cloud-vision-api-pass-landmark-location-as-base64-encoded-strings">B. Build an application that calls the Cloud Vision API. Pass landmark location as base64-encoded strings.</h4>
+<h4 id="c-build-and-train-a-classification-model-with-tensorflow-deploy-the-model-using-ai-platform-prediction-pass-client-image-locations-as-base64-encoded-strings">C. Build and train a classification model with TensorFlow. Deploy the model using AI Platform Prediction. Pass client image locations as base64-encoded strings.</h4>
+<h4 id="d-build-and-train-a-classification-model-with-tensorflow-deploy-the-model-using-ai-platform-prediction-inspect-the-generated-mid-values-to-supply-the-image-labels">D. Build and train a classification model with TensorFlow. Deploy the model using AI Platform Prediction. Inspect the generated MID values to supply the image labels.</h4>
+<ol start="23">
+<li>You are building a data pipeline on Google Cloud. You need to select services that will host a deep neural network machine-learning model also hosted on Google Cloud. You also need to monitor and run jobs that could occasionally fail. What should you do?</li>
+</ol>
+<h4 id="a-use-ai-platform-prediction-to-host-your-model-monitor-the-status-of-the-operation-object-for-error-results">A. Use AI Platform Prediction to host your model. Monitor the status of the Operation object for &lsquo;error&rsquo; results.</h4>
+<h4 id="b-use-ai-platform-prediction-to-host-your-model-monitor-the-status-of-the-jobs-object-for-failed-job-states">B. Use AI Platform Prediction to host your model. Monitor the status of the Jobs object for &lsquo;failed&rsquo; job states.</h4>
+<h4 id="c-use-a-google-kubernetes-engine-cluster-to-host-your-model-monitor-the-status-of-the-jobs-object-for-failed-job-states">C. Use a Google Kubernetes Engine cluster to host your model. Monitor the status of the Jobs object for &lsquo;failed&rsquo; job states.</h4>
+<h4 id="d-use-a-google-kubernetes-engine-cluster-to-host-your-model-monitor-the-status-of-operation-object-for-error-results">D. Use a Google Kubernetes Engine cluster to host your model. Monitor the status of Operation object for &lsquo;error&rsquo; results.</h4>
+<ol start="24">
+<li>You work on a regression problem in a natural language processing domain, and you have 100M labeled examples in your dataset. You have randomly shuffled your data and split your dataset into training and test samples (in a 90/10 ratio). After you have trained the neural network and evaluated your model on a test set, you discover that the root-mean-squared error (RMSE) of your model is twice as high on the train set as on the test set. How should you improve the performance of your model?</li>
+</ol>
+<h4 id="a-increase-the-share-of-the-test-sample-in-the-train-test-split">A. Increase the share of the test sample in the train-test split.</h4>
+<h4 id="b-try-to-collect-more-data-and-increase-the-size-of-your-dataset">B. Try to collect more data and increase the size of your dataset.</h4>
+<h4 id="c-try-out-regularization-techniques-eg-dropout-or-batch-normalization-to-avoid-overfitting">C. Try out regularization techniques (e.g., dropout or batch normalization) to avoid overfitting.</h4>
+<h4 id="d-increase-the-complexity-of-your-model-by-eg-introducing-an-additional-layer-or-increasing-the-size-of-vocabularies-or-n-grams-used-to-avoid-underfitting">D. Increase the complexity of your model by, e.g., introducing an additional layer or increasing the size of vocabularies or n-grams used to avoid underfitting.</h4>
+<ol start="25">
+<li>You work on a regression problem in a natural language processing domain, and you have 100M labeled examples in your dataset. You have randomly shuffled your data and split your dataset into training and test samples (in a 90/10 ratio). After you have trained the neural network and evaluated your model on a test set, you discover that the root-mean-squared error (RMSE) of your model is twice as high on the train set as on the test set. How should you improve the performance of your model?</li>
+</ol>
+<h4 id="a-increase-the-share-of-the-test-sample-in-the-train-test-split-1">A. Increase the share of the test sample in the train-test split.</h4>
+<h4 id="b-try-to-collect-more-data-and-increase-the-size-of-your-dataset-1">B. Try to collect more data and increase the size of your dataset.</h4>
+<h4 id="c-try-out-regularization-techniques-eg-dropout-or-batch-normalization-to-avoid-overfitting-1">C. Try out regularization techniques (e.g., dropout or batch normalization) to avoid overfitting.</h4>
+<h4 id="d-increase-the-complexity-of-your-model-by-eg-introducing-an-additional-layer-or-increasing-the-size-of-vocabularies-or-n-grams-used-to-avoid-underfitting-1">D. Increase the complexity of your model by, e.g., introducing an additional layer or increasing the size of vocabularies or n-grams used to avoid underfitting.</h4>
+<ol start="26">
+<li>You are using Pub/Sub to stream inventory updates from many point-of-sale (POS) terminals into BigQuery. Each update event has the following information: product identifier &ldquo;prodSku&rdquo;, change increment &ldquo;quantityDelta&rdquo;, POS identification &ldquo;termId&rdquo;, and &ldquo;messageId&rdquo; which is created for each push attempt from the terminal. During a network outage, you discovered that duplicated messages were sent, causing the inventory system to over-count the changes. You determine that the terminal application has design problems and may send the same event more than once during push retries. You want to ensure that the inventory update is accurate. What should you do?</li>
+</ol>
+<h4 id="a-inspect-the-publishtime-of-each-message-make-sure-that-messages-whose-publishtime-values-match-rows-in-the-bigquery-table-are-discarded">A. Inspect the &ldquo;publishTime&rdquo; of each message. Make sure that messages whose &ldquo;publishTime&rdquo; values match rows in the BigQuery table are discarded.</h4>
+<h4 id="b-inspect-the-messageid-of-each-message-make-sure-that-any-messages-whose-messageid-values-match-corresponding-rows-in-the-bigquery-table-are-discarded">B. Inspect the &ldquo;messageId&rdquo; of each message. Make sure that any messages whose &ldquo;messageId&rdquo; values match corresponding rows in the BigQuery table are discarded.</h4>
+<h4 id="c-instead-of-specifying-a-change-increment-for-quantitydelta-always-use-the-derived-inventory-value-after-the-increment-has-been-applied-name-the-new-attribute-adjustedquantity">C. Instead of specifying a change increment for &ldquo;quantityDelta&rdquo;, always use the derived inventory value after the increment has been applied. Name the new attribute &ldquo;adjustedQuantity&rdquo;.</h4>
+<h4 id="d-add-another-attribute-orderid-to-the-message-payload-to-mark-the-unique-check-out-order-across-all-terminals-make-sure-that-messages-whose-orderid-and-prodsku-values-match-corresponding-rows-in-the-bigquery-table-are-discarded">D. Add another attribute orderId to the message payload to mark the unique check-out order across all terminals. Make sure that messages whose &ldquo;orderId&rdquo; and &ldquo;prodSku&rdquo; values match corresponding rows in the BigQuery table are discarded.</h4>
+<ol start="27">
+<li>You designed a database for patient records as a pilot project to cover a few hundred patients in three clinics. Your design used a single database table to represent all patients and their visits, and you used self-joins to generate reports. The server resource utilization was at 50%. Since then, the scope of the project has expanded. The database table must now store 100 times more patient records. You can no longer run the reports, because they either take too long or they encounter errors with insufficient compute resources. How should you adjust the database design?</li>
+</ol>
+<h4 id="a-add-capacity-memory-and-disk-space-to-the-database-server-by-the-order-of-200">A. Add capacity (memory and disk space) to the database server by the order of 200.</h4>
+<h4 id="b-shard-the-tables-into-smaller-ones-based-on-date-ranges-and-only-generate-reports-with-pre-specified-date-ranges">B. Shard the tables into smaller ones based on date ranges, and only generate reports with pre-specified date ranges.</h4>
+<h4 id="c-normalize-the-master-patient-record-table-into-the-patients-table-and-the-visits-table-and-create-other-necessary-tables-to-avoid-self-join">C. Normalize the master patient-record table into the patients table and the visits table, and create other necessary tables to avoid self-join.</h4>
+<h4 id="d-partition-the-table-into-smaller-tables-with-one-for-each-clinic-run-queries-against-the-smaller-table-pairs-and-use-unions-for-consolidated-reports">D. Partition the table into smaller tables, with one for each clinic. Run queries against the smaller table pairs, and use unions for consolidated reports.</h4>
+<ol start="28">
+<li>Your startup has never implemented a formal security policy. Currently, everyone in the company has access to the datasets stored in BigQuery. Teams have the freedom to use the service as they see fit, and they have not documented their use cases. You have been asked to secure the data warehouse. You need to discover what everyone is doing. What should you do first?</li>
+</ol>
+<h4 id="a-use-cloud-audit-logs-to-review-data-access">A. Use Cloud Audit Logs to review data access.</h4>
+<h4 id="b-get-the-identity-and-access-management-iam-policy-of-each-table">B. Get the identity and access management (IAM) policy of each table.</h4>
+<h4 id="c-use-cloud-monitoring-to-see-the-usage-of-bigquery-query-slots">C. Use Cloud Monitoring to see the usage of BigQuery query slots.</h4>
+<h4 id="d-use-the-cloud-billing-api-to-see-what-account-the-warehouse-is-being-billed-to">D. Use the Cloud Billing API to see what account the warehouse is being billed to.</h4>
+<ol start="29">
+<li>You created a job which runs daily to import highly sensitive data from an on-premises location to Cloud Storage. You also set up a streaming data insert into Cloud Storage via a Kafka node that is running on a Compute Engine instance. You need to encrypt the data at rest and supply your own encryption key. Your key should not be stored in the Google Cloud. What should you do?</li>
+</ol>
+<h4 id="a-create-a-dedicated-service-account-and-use-encryption-at-rest-to-reference-your-data-stored-in-cloud-storage-and-compute-engine-data-as-part-of-your-api-service-calls">A. Create a dedicated service account, and use encryption at rest to reference your data stored in Cloud Storage and Compute Engine data as part of your API service calls.</h4>
+<h4 id="b-upload-your-own-encryption-key-to-cloud-key-management-service-and-use-it-to-encrypt-your-data-in-cloud-storage-use-your-uploaded-encryption-key-and-reference-it-as-part-of-your-api-service-calls-to-encrypt-your-data-in-the-kafka-node-hosted-on-compute-engine">B. Upload your own encryption key to Cloud Key Management Service, and use it to encrypt your data in Cloud Storage. Use your uploaded encryption key and reference it as part of your API service calls to encrypt your data in the Kafka node hosted on Compute Engine.</h4>
+<h4 id="c-upload-your-own-encryption-key-to-cloud-key-management-service-and-use-it-to-encrypt-your-data-in-your-kafka-node-hosted-on-compute-engine">C. Upload your own encryption key to Cloud Key Management Service, and use it to encrypt your data in your Kafka node hosted on Compute Engine.</h4>
+<h4 id="d-supply-your-own-encryption-key-and-reference-it-as-part-of-your-api-service-calls-to-encrypt-your-data-in-cloud-storage-and-your-kafka-node-hosted-on-compute-engine">D. Supply your own encryption key, and reference it as part of your API service calls to encrypt your data in Cloud Storage and your Kafka node hosted on Compute Engine.</h4>
+<ol start="30">
+<li>You are working on a project with two compliance requirements. The first requirement states that your developers should be able to see the Google Cloud billing charges for only their own projects. The second requirement states that your finance team members can set budgets and view the current charges for all projects in the organization. The finance team should not be able to view the project contents. You want to set permissions. What should you do?</li>
+</ol>
+<h4 id="a-add-the-finance-team-members-to-the-default-iam-owner-role-add-the-developers-to-a-custom-role-that-allows-them-to-see-their-own-spend-only">A. Add the finance team members to the default IAM Owner role. Add the developers to a custom role that allows them to see their own spend only.</h4>
+<h4 id="b-add-the-finance-team-members-to-the-billing-administrator-role-for-each-of-the-billing-accounts-that-they-need-to-manage-add-the-developers-to-the-viewer-role-for-the-project">B. Add the finance team members to the Billing Administrator role for each of the billing accounts that they need to manage. Add the developers to the Viewer role for the Project.</h4>
+<h4 id="c-add-the-developers-and-finance-managers-to-the-viewer-role-for-the-project">C. Add the developers and finance managers to the Viewer role for the Project.</h4>
+<h4 id="d-add-the-finance-team-to-the-viewer-role-for-the-project-add-the-developers-to-the-security-reviewer-role-for-each-of-the-billing-accounts">D. Add the finance team to the Viewer role for the Project. Add the developers to the Security Reviewer role for each of the billing accounts.</h4>
+<p>정답</p>
+<ol>
+<li>
+<p>B is correct because of the requirement to support occasionally (schema) changing JSON files and aggregate ANSI SQL queries: you need to use BigQuery, and it is quickest to use &lsquo;Automatically detect&rsquo; for schema changes.
+A is not correct because you should not provide format files: you can simply turn on the &lsquo;Automatically detect&rsquo; schema changes flag.
+C, D are not correct because you should not use Cloud Storage for this scenario: it is cumbersome and doesn&rsquo;t add value.</p>
+</li>
+<li>
+<p>D. Create separate Dataproc clusters to support analytics and data processing, and point both at the same Cloud Storage bucket that contains the Parquet files that were previously stored on HDFS.</p>
+</li>
+<li>
+<p>A is not correct because this will just return one row.
+B is not correct because this doesn’t get you the latest value, but will get you a sum of the same event over time which doesn’t make too much sense if you have duplicates.
+C is not correct because if you have events that are not duplicated, it will be excluded.
+D is correct because it will just pick out a single row for each set of duplicates.</p>
+</li>
+<li>
+<p>A Is correct because the question requires delay be handled on a per-player basis and session windowing will do that. Pub/Sub handles the need to scale exponentially with traffic coming from around the globe.
+B Is not correct because Apache Kafka will not be able to handle an exponential growth in users globally as well as Pub/Sub.
+C is not correct because a global window does not meet the requirements of handling out-of-order delay on a per-player basis.
+D is not correct because a global window does not meet the requirements of handling out-of-order delay on a per-player basis.
+ref : <a href="https://beam.apache.org/documentation/programming-guide/#overview,">https://beam.apache.org/documentation/programming-guide/#overview,</a> <a href="https://cloud.google.com/pubsub/architecture">https://cloud.google.com/pubsub/architecture</a></p>
+</li>
+<li>
+<p>A is not correct because if another data format other than CSV was selected then the data would not import successfully.
+B is not correct because the data was fully imported meaning no rows were skipped.
+C is correct because this is the only situation that would cause successful import.
+D is not correct because whether the data has been previously transformed will not affect whether the source file will match the BigQuery table.
+ref : <a href="https://cloud.google.com/bigquery/docs/loading-data#loading_encoded_data">https://cloud.google.com/bigquery/docs/loading-data#loading_encoded_data</a></p>
+</li>
+<li>
+<p>A is not correct because the goal is to re-use their Hadoop jobs and MapReduce and/or Spark jobs cannot simply be moved to Dataflow.
+B is not correct because the goal is to persist the data beyond the life of the ephemeral clusters, and if HDFS is used as the primary attached storage mechanism, it will also disappear at the end of the cluster’s life.
+C is not correct because the goal is to use managed services as much as possible, and this is the opposite.
+D is correct because it uses managed services, and also allows for the data to persist on GCS beyond the life of the cluster.
+E is not correct because of the same reasons as option C.</p>
+</li>
+<li>
+<p>C is correct because the data type, volume, and query pattern best fits BigTable capabilities and also Google best practices as linked below.
+A, B are not correct because you do not need to use BigQuery for the query pattern in this scenario.
+D is not correct because you can use the simpler method of &lsquo;cbt tool&rsquo; to support this scenario.
+ref : <a href="https://cloud.google.com/bigtable/docs/cbt-overview,">https://cloud.google.com/bigtable/docs/cbt-overview,</a> <a href="https://cloud.google.com/bigtable/docs/installing-hbase-shell">https://cloud.google.com/bigtable/docs/installing-hbase-shell</a></p>
+</li>
+<li>
+<p>A is correct because of recommended Google practices; see the links below.
+B is not correct because you should not attach a GUID to each message to support the scenario.
+C, D are not correct because you should not use Apache Kafka for this scenario (it is overly complex compared to using Pub/Sub, which can support all of the requirements).
+ref : <a href="https://www.jesse-anderson.com/2016/07/apache-kafka-and-google-cloud-pubsub/,">https://www.jesse-anderson.com/2016/07/apache-kafka-and-google-cloud-pubsub/,</a> <a href="https://cloud.google.com/pubsub/docs/ordering">https://cloud.google.com/pubsub/docs/ordering</a></p>
+</li>
+<li>
+<p>A Is correct because Bigtable can store and analyze time series data, and the solution is using managed services which is what the requirements are calling for.
+B Is not correct because BigTable cannot limit access to specific tables.
+C is not correct because it requires deployment of an HBase cluster.
+D is not correct because it requires deployment of a Cassandra cluster.</p>
+</li>
+<li>
+<p>B is correct because of the requirement to use custom Spark transforms; use Dataproc. ANSI SQL queries require the use of BigQuery.
+A is not correct because Dataflow does not support Spark.
+C, D are not correct because Cloud Storage does not support SQL, and you should not use Dataflow, either.
+ref: <a href="https://stackoverflow.com/questions/46436794/what-is-the-difference-between-google-cloud-dataflow-and-google-cloud-dataproc">https://stackoverflow.com/questions/46436794/what-is-the-difference-between-google-cloud-dataflow-and-google-cloud-dataproc</a></p>
+</li>
+<li>
+<p>B is correct because of the requirement to globally scalable transactions—use Cloud Spanner. CPU utilization is the recommended metric for scaling, per Google best practices, linked below.
+A is not correct because you should not use storage utilization as a scaling metric.
+C, D are not correct because you should not use Cloud Bigtable for this scenario.
+ref : <a href="https://cloud.google.com/spanner/docs/monitoring-cloud,">https://cloud.google.com/spanner/docs/monitoring-cloud,</a> <a href="https://cloud.google.com/bigtable/docs/monitoring-instance">https://cloud.google.com/bigtable/docs/monitoring-instance</a></p>
+</li>
+<li>
+<p>B Is not correct because bq cp is for existing BigQuery tables only
+A Is not correct because bq insert will not set the partitioning and clustering and only supports JSON
+C is correct because it loads the data and sets partitioning and clustering
+D is not correct because an external table will not satisfy the query speed requirement
+ref : <a href="https://cloud.google.com/bigquery/docs/loading-data,">https://cloud.google.com/bigquery/docs/loading-data,</a> <a href="https://cloud.google.com/bigquery/docs/bq-command-line-tool,">https://cloud.google.com/bigquery/docs/bq-command-line-tool,</a> <a href="https://airflow.apache.org/docs/apache-airflow/stable/integration.html#bigquerycreateemptytableoperator,">https://airflow.apache.org/docs/apache-airflow/stable/integration.html#bigquerycreateemptytableoperator,</a> <a href="https://cloud.google.com/bigquery/docs/reference/bq-cli-reference,">https://cloud.google.com/bigquery/docs/reference/bq-cli-reference,</a></p>
+</li>
+<li>
+<p>B. There is no per-user metric being used so it’s possible a sum will be created for some users while they are still browsing the site.
+D. If a user is still visiting the site when the 30-min window closes, the sum will be wrong.
+C. This is correct because it continues to sum user page visits during their browsing session and completes at the same time as the session timeout.
+A. A user-specific sum is never calculated, just sums for arbitrary 30-min windows of time staggered by 5 minutes.
+ref : <a href="https://cloud.google.com/dataflow/pricing">https://cloud.google.com/dataflow/pricing</a></p>
+</li>
+<li>
+<p>A is not correct because assuming there is one key per user, a message will be sent every 60 minutes.
+B is not correct because assuming there is one key per user, a message will be sent 60 minutes after they first started browsing even if they are still browsing.
+C is correct because it will send a message per user after that user is inactive for 60 minutes.
+D is not correct because it will cause messages to be sent out every 60 minutes to all users regardless of where they are in their current session.</p>
+</li>
+<li>
+<p>A Is not correct because ParDo doesn’t write to BigQuery or BigTable
+B Is not correct because Combine doesn’t write to BigQuery or Bigtable
+C Is correct because this is the right set of transformations that accepts and writes to the required data stores.
+D Is not correct because to meet the business requirements, it is much faster and easier using dataflow answer C
+ref : <a href="https://cloud.google.com/blog/products/data-analytics/guide-to-common-cloud-dataflow-use-case-patterns-part-1">https://cloud.google.com/blog/products/data-analytics/guide-to-common-cloud-dataflow-use-case-patterns-part-1</a></p>
+</li>
+<li>
+<p>A is correct because Google recommends using Cloud Storage instead of HDFS as it is much more cost effective especially when jobs aren’t running.
+B is not correct because this will decrease the compute cost but not the storage cost.
+C is not correct because while this will reduce cost somewhat, it will not be as cost effective as using Cloud Storage.
+D is not correct because while this will reduce cost somewhat, it will not be as cost effective as using Cloud Storage.
+ref : <a href="https://cloud.google.com/dataproc/docs/concepts/connectors/cloud-storage">https://cloud.google.com/dataproc/docs/concepts/connectors/cloud-storage</a></p>
+</li>
+<li>
+<p>A is not correct because Cloud SQL does not natively scale horizontally.
+B is not correct because Cloud SQL does not natively scale horizontally.
+C is correct because Cloud Spanner scales horizontally, and you can create secondary indexes for the range queries that are required.
+D is not correct because Dataflow is a data pipelining tool to move and transform data, but the use case is centered around querying.</p>
+</li>
+<li>
+<p>A is not correct because this will cause most writes to be pushed to a single node (known as hotspotting)
+B is not correct because this will not allow for multiple readings from the same sensor as new readings will overwrite old ones.
+C is not correct because this will cause most writes to be pushed to a single node (known as hotspotting)
+D is correct because it will allow for retrieval of data based on both sensor id and timestamp but without causing hotspotting.
+ref : <a href="https://cloud.google.com/bigtable/docs/schema-design,">https://cloud.google.com/bigtable/docs/schema-design,</a> <a href="https://cloud.google.com/bigtable/docs/schema-design-time-series#ensure_that_your_row_key_avoids_hotspotting">https://cloud.google.com/bigtable/docs/schema-design-time-series#ensure_that_your_row_key_avoids_hotspotting</a></p>
+</li>
+<li>
+<p>A is correct because it provides a managed service and a fully trained model, and the user is pulling the entities, which is the right label.
+B is not correct because sentiment is the incorrect label for this use case.
+C is not correct because this requires experience with machine learning.
+D is not correct because this requires experience with machine learning.</p>
+</li>
+<li>
+<p>A is not correct because this is not the correct wildcard syntax as there is no wildcard character present.
+B is not correct because this is not the correct wildcard syntax since it’s missing backticks.
+C is not correct because this is not the correct wildcard syntax since it’s not using a backtick as the last character
+D is correct because it follows the correct wildcard syntax of enclosing the table name in backticks and including the * wildcard character.
+ref : <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/wildcard-table-reference">https://cloud.google.com/bigquery/docs/reference/standard-sql/wildcard-table-reference</a></p>
+</li>
+<li>
+<p>A Is correct because synchronous mode is recommended for short audio files.
+B is incorrect since the recommended way to process short audio files (shorter than 1 minutes) is a synchronous recognize request and not an asynchronous one.
+C Is incorrect since using the native sample rate is recommended over resampling.
+D Is incorrect since there is nothing in the question that suggests the off-the-shelf model will not perform sufficiently.
+ref : <a href="https://cloud.google.com/speech-to-text/docs/best-practices,">https://cloud.google.com/speech-to-text/docs/best-practices,</a> <a href="https://cloud.google.com/speech-to-text/docs/sync-recognize,">https://cloud.google.com/speech-to-text/docs/sync-recognize,</a> <a href="https://cloud.google.com/speech-to-text/docs/release-notes#v1beta1">https://cloud.google.com/speech-to-text/docs/release-notes#v1beta1</a></p>
+</li>
+<li>
+<p>B is correct because of the requirement to quickly develop a model that generates landmark labels from photos.
+This is supported in Cloud Vision API; see the link below.
+A is not correct because you should not inspect the generated MID values; instead, you should simply pass the image locations to the API and use the labels, which are output.
+C, D are not correct because you should not build a custom classification TF model for this scenario.
+ref : <a href="https://cloud.google.com/vision/docs/labels">https://cloud.google.com/vision/docs/labels</a></p>
+</li>
+<li>
+<p>B is correct because of the requirement to host an ML DNN and Google-recommended monitoring object (Jobs); see the links below.
+A is not correct because you should not use the Operation object to monitor failures.
+C, D are not correct because you should not use a Kubernetes Engine cluster for this scenario.
+ref : <a href="https://cloud.google.com/ai-platform/training/docs/managing-models-jobs,">https://cloud.google.com/ai-platform/training/docs/managing-models-jobs,</a> <a href="https://cloud.google.com/stackdriver/docs/solutions/gke">https://cloud.google.com/stackdriver/docs/solutions/gke</a></p>
+</li>
+<li>
+<p>A Is incorrect since test sample is large enough
+C Is incorrect since regularization helps to avoid overfitting and we have a clear underfitting case
+B is incorrect since dataset is pretty large already, and having more data typically helps with overfitting and not with underfitting
+D Is correct since increasing model complexity generally helps when you have an underfitting problem</p>
+</li>
+<li>
+<p>B Is not correct because duplication in this case could be caused by a terminal re-try, in which case messageId could be different for the same event.
+A Is not correct because publishTime cannot uniquely identify a message and it does not address push retries.
+D is correct because the client application must include a unique identifier to disambiguate possible duplicates due to push retries.
+C is not correct because there are many terminals. Calculating the projected inventory values on the terminal introduces a race condition where multiple terminals could update the inventory data simultaneously.
+ref : <a href="https://cloud.google.com/pubsub/docs#duplicates">https://cloud.google.com/pubsub/docs#duplicates</a></p>
+</li>
+<li>
+<p>A is not correct because adding additional compute resources is not a recommended way to resolve database schema problems.
+B is not correct because this will reduce the functionality of the database and make running reports more difficult.
+C is correct because this option provides the least amount of inconvenience over using pre-specified date ranges or one table per clinic while also increasing performance due to avoiding self-joins.
+D is not correct because this will likely increase the number of tables so much that it will be more difficult to generate reports vs. the correct option.</p>
+</li>
+<li>
+<p>A is correct because this is the best way to get granular access to data showing which users are accessing which data.
+B is not correct because we already know that all users already have access to all data, so this information is unlikely to be useful. It will also not show what users have done, just what they can do.
+C is not correct because slot usage will not inform security policy.
+D is not correct because a billing account is typically shared among many people and will only show the amount of data queried and stored.
+ref : <a href="https://cloud.google.com/bigquery/docs/reference/auditlogs/#mapping-audit-entries-to-log-streams">https://cloud.google.com/bigquery/docs/reference/auditlogs/#mapping-audit-entries-to-log-streams</a></p>
+</li>
+<li>
+<p>D is correct because the scenario requires you to use your own key and also to not store your key on Compute Engine, and also this is a Google recommended practice; see the links below.
+A is not correct because the scenario states that you must supply your own encryption key instead of using one generated by Google Cloud.
+B is not correct because the scenario states that you should use, but not store, your own key with Google Cloud services.
+C is not correct because it does not meet the scenario requirement to reference, but not store, your own key with Google Cloud services.
+ref : <a href="https://cloud.google.com/docs/security/encryption/default-encryption,">https://cloud.google.com/docs/security/encryption/default-encryption,</a></p>
+</li>
+<li>
+<p>B is correct because it uses the principle of least privilege for IAM roles; use the Billing Administrator IAM role for that job function.
+A, C, D are not correct because it is a best practice to use pre-defined IAM roles when they exist and match your business scenario; see the links below.
+ref : <a href="https://cloud.google.com/iam/docs/job-functions/billing">https://cloud.google.com/iam/docs/job-functions/billing</a></p>
+</li>
+</ol>
+
+        </p>
+    </div>
+    <div id="disqus_thread"></div>
+    <script>
+    
+    
+
+    
+
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ds-blog-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+    <div class="page-footer">
+        
+    </div>
+
+
+        
+
+<link rel="stylesheet" type="text/css" href="/ds_blog/css/katex.min.css">
+<script type="text/javascript" src="/ds_blog/js/katex.min.js"></script>
+<script type="text/javascript" src="/ds_blog/js/auto-render.min.js"onload="renderMathInElement(document.body);"></script>
+
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons">
+        
+    <a class="social-icon" href="mailto:jinmochong@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://www.facebook.com/profile.php?id=100006651933516" target="_blank" rel="noopener" title="Facebook">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M27,14.0789648 C27,6.89925781 21.179707,1.07896484 14,1.07896484 C6.82029297,1.07896484 1,6.89925781 1,14.0789648 C1,20.5676406 5.75391211,25.9457813 11.96875,26.9210352 L11.96875,17.8367773 L8.66796875,17.8367773 L8.66796875,14.0789648 L11.96875,14.0789648 L11.96875,11.2149023 C11.96875,7.95677734 13.9095586,6.15708984 16.879043,6.15708984 C18.3013496,6.15708984 19.7890625,6.41099609 19.7890625,6.41099609 L19.7890625,9.61021484 L18.149793,9.61021484 C16.534873,9.61021484 16.03125,10.6123066 16.03125,11.640373 L16.03125,14.0789648 L19.6367188,14.0789648 L19.0603516,17.8367773 L16.03125,17.8367773 L16.03125,26.9210352 C22.2460879,25.9457813 27,20.5676406 27,14.0789648"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <a class="social-icon" href="https://www.linkedin.com/in/jim-chong-8b8059b2/" target="_blank" rel="noopener" title="LinkedIn">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M2,3.654102 C2,2.69908141 2.79442509,1.92397846 3.77383592,1.92397846 L24.2261641,1.92397846 C25.2058917,1.92397846 26,2.69908141 26,3.654102 L26,24.3462148 C26,25.3015521 25.2058917,26.0760215 24.2261641,26.0760215 L3.77383592,26.0760215 C2.79442509,26.0760215 2,25.3015521 2,24.3465315 L2,3.65378524 L2,3.654102 Z M9.27526132,22.1415901 L9.27526132,11.2356668 L5.65030092,11.2356668 L5.65030092,22.1415901 L9.27557808,22.1415901 L9.27526132,22.1415901 Z M7.46341463,9.74691162 C8.72727273,9.74691162 9.51409566,8.90940767 9.51409566,7.86284447 C9.49033893,6.79252455 8.72727273,5.97846056 7.48748812,5.97846056 C6.24675325,5.97846056 5.43649034,6.79252455 5.43649034,7.86284447 C5.43649034,8.90940767 6.22299652,9.74691162 7.4396579,9.74691162 L7.46309788,9.74691162 L7.46341463,9.74691162 Z M11.2815965,22.1415901 L14.9062401,22.1415901 L14.9062401,16.0519481 C14.9062401,15.7263225 14.9299968,15.4000634 15.0256573,15.1675641 C15.2876148,14.5159962 15.8840672,13.8416218 16.8856509,13.8416218 C18.1970225,13.8416218 18.7218879,14.8416218 18.7218879,16.3078872 L18.7218879,22.1415901 L22.3465315,22.1415901 L22.3465315,15.8885017 C22.3465315,12.5388027 20.5584416,10.9800443 18.1735825,10.9800443 C16.2182452,10.9800443 15.3595185,12.072854 14.8824834,12.8172315 L14.9065569,12.8172315 L14.9065569,11.2359835 L11.2819132,11.2359835 C11.3291099,12.2591067 11.2815965,22.1419069 11.2815965,22.1419069 L11.2815965,22.1415901 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+    <a class="social-icon" href="http://jinmochong.com" target="_blank" rel="noopener" title="WordPress">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M23.8616583,8.6080289 C24.7389027,10.2086825 25.2381067,12.0455783 25.2381067,13.999537 C25.2381067,18.1456809 22.9911599,21.7655045 19.6500386,23.7135109 L23.0825616,13.7889561 C23.723696,12.185657 23.9371871,10.9036526 23.9371871,9.7637111 C23.9371871,9.3499565 23.9099385,8.96596366 23.8616583,8.6080289 L23.8616583,8.6080289 Z M15.5487358,8.7303828 C16.2253199,8.69480096 16.834973,8.62363729 16.834973,8.62363729 C17.4405256,8.55194452 17.3690974,7.66200176 16.7632802,7.69745132 C16.7632802,7.69745132 14.9429187,7.84030777 13.7677921,7.84030777 C12.6635647,7.84030777 10.8080182,7.69745132 10.8080182,7.69745132 C10.2019365,7.66200176 10.1309051,8.5877909 10.7367222,8.62363729 C10.7367222,8.62363729 11.3099999,8.69480096 11.9155525,8.7303828 L13.6663376,13.5278462 L11.2065612,20.9038685 L7.1142531,8.7303828 C7.79136621,8.69480096 8.40035795,8.62363729 8.40035795,8.62363729 C9.00551374,8.55194452 8.93408551,7.66200176 8.32853291,7.69745132 C8.32853291,7.69745132 6.50856822,7.84030777 5.33330939,7.84030777 C5.12246386,7.84030777 4.8739201,7.83514906 4.61003249,7.8266835 C6.61954652,4.7759047 10.073498,2.76123197 13.9999339,2.76123197 C16.925581,2.76123197 19.5895892,3.87987732 21.5889181,5.71187898 C21.5405056,5.70896894 21.4932836,5.70288431 21.4434161,5.70288431 C20.3394533,5.70288431 19.5561237,6.66451984 19.5561237,7.69745132 C19.5561237,8.62363729 20.0905127,9.40723136 20.6600866,10.333285 C21.0874655,11.0818264 21.5866694,12.0433296 21.5866694,13.4327409 C21.5866694,14.3945087 21.2166977,15.5107731 20.7315148,17.065792 L19.610224,20.8111441 L15.5487358,8.7303828 Z M13.9999339,25.238768 C12.8967646,25.238768 11.8320873,25.0769963 10.8249493,24.7808338 L14.1972874,14.982601 L17.6515034,24.4467084 C17.6742546,24.5022637 17.7021645,24.5534539 17.7319263,24.6016018 C16.5638103,25.0128432 15.3086576,25.238768 13.9999339,25.238768 L13.9999339,25.238768 Z M2.76162879,13.999537 C2.76162879,12.3701799 3.11109799,10.8234943 3.7347722,9.42588206 L9.09572494,24.1139058 C5.34640457,22.2924861 2.76162879,18.4479281 2.76162879,13.999537 L2.76162879,13.999537 Z M13.9999339,1.49999473 C7.1075071,1.49999473 1.500127,7.10724256 1.500127,13.999537 C1.500127,20.8920961 7.1075071,26.5000053 13.9999339,26.5000053 C20.8922283,26.5000053 26.499873,20.8920961 26.499873,13.999537 C26.499873,7.10724256 20.8922283,1.49999473 13.9999339,1.49999473 L13.9999339,1.49999473 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+    <a class="social-icon" href="https://github.com/jinmc" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	<div class="footer-mobile-links">
+		<p><a href="https://github.com/kimcc/hugo-theme-noteworthy" target="_blank" rel="noopener">Noteworthy theme</a></p>
+		<span class="divider-bar">|</span>
+		<p><a href="https://gohugo.io" target="_blank" rel="noopener">Built with Hugo</a></p>
+	</div>
+
+	<script src="https://jinmc.github.io/ds_blog/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+    </body>
+</html>
